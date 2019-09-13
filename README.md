@@ -9,5 +9,7 @@ mkvirtualenv kinan --python=python3.6
 # install cobrapy develop version
 # install sbmlutils develop version
 
-pip install -r requirements.txt
+(kinan) pip install -e .
 ```
+
+&copy; 2019 Matthias König (https://livermetabolism.com)

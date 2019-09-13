@@ -2,3 +2,4 @@
 results
 code/__pycache__
 *.pyc
+kinan.egg-info

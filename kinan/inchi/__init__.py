@@ -1,0 +1,1 @@
+from .ikey import inchi_to_inchikey
