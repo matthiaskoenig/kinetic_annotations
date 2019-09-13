@@ -1,0 +1,3 @@
+pandas>=0.25
+brendapy>=0.4.1
+sbmlutils>=

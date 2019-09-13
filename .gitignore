@@ -1,0 +1,4 @@
+.idea
+results
+code/__pycache__
+*.pyc
