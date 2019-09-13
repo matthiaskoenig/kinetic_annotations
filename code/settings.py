@@ -3,6 +3,9 @@ import os
 RESULTS_PATH = os.path.abspath(
     os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "results")
 )
+RESOURCE_PATH = os.path.abspath(
+    os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", "resources")
+)
 if not os.path.exists(RESULTS_PATH):
     raise IOError(f"Path does not exist: {RESULTS_PATH}")
 

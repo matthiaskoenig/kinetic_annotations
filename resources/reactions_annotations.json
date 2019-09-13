@@ -1,0 +1,3822 @@
+{
+  "GLCt1r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GLCt1r"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GLCt1"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRANS-RXN0-574"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100188"
+      ]
+    ]
+  },
+  "HEX1": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/HEX1"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/17825"
+      ],
+      [
+        "BQB_IS",
+        "rhea/17828"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100612"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00216"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/HEX1"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLUCOKIN-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.1.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00299"
+      ]
+    ]
+  },
+  "PGI": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PGI"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102535"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00558"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PGI"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PGLUCISOM-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.3.1.9"
+      ]
+    ]
+  },
+  "PFK": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PFK"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102507"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00545"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PFK"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.1.11"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/16109"
+      ]
+    ]
+  },
+  "FBA": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FBA"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/14729"
+      ],
+      [
+        "BQB_IS",
+        "rhea/14732"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99459"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00786"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FBA"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.1.2.13"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01068"
+      ]
+    ]
+  },
+  "TPI": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/TPI"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104918"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00747"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/TPI"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRIOSEPISOMERIZATION-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.3.1.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01015"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/18585"
+      ]
+    ]
+  },
+  "GAPD": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GAPD"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/10300"
+      ],
+      [
+        "BQB_IS",
+        "rhea/10303"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100040"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00781"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GAPD"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GAPOXNPHOSPHN-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1.12"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01061"
+      ]
+    ]
+  },
+  "PGK": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PGK"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/14804"
+      ],
+      [
+        "BQB_IS",
+        "rhea/14801"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102538"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01100"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PGK"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PHOSGLYPHOS-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.2.3"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01512"
+      ]
+    ]
+  },
+  "PGM": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PGM"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/15904"
+      ],
+      [
+        "BQB_IS",
+        "rhea/15901"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102547"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01106"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PGM"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:3PGAREARR-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.4.2.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01518"
+      ]
+    ]
+  },
+  "ENO": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ENO"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/10164"
+      ],
+      [
+        "BQB_IS",
+        "rhea/10167"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR97932"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00459"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ENO"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2PGADEHYDRAT-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.11"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00658"
+      ]
+    ]
+  },
+  "PK": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PYK"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/18157"
+      ],
+      [
+        "BQB_IS",
+        "rhea/18160"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR103371"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00148"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PYK"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PEPDEPHOS-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.1.40"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00200"
+      ]
+    ]
+  },
+  "LDH_L": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/LDH_L"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/23447"
+      ],
+      [
+        "BQB_IS",
+        "rhea/23444"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101040"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00499"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/LDH_L"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-LACTATE-DEHYDROGENASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.27"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00703"
+      ]
+    ]
+  },
+  "L_LACt2r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/L_LACt2r"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101277"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn05602"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/L_LACt2r"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRANS-RXN-104"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/29415"
+      ]
+    ]
+  },
+  "PYRt2r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PYRt2r"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PYRt2"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR103385"
+      ]
+    ]
+  },
+  "PDHm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PDHm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/28042"
+      ],
+      [
+        "BQB_IS",
+        "rhea/28045"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102425"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PDHm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PYRUVDEH-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00209"
+      ]
+    ]
+  },
+  "PCm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PCm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/20844"
+      ],
+      [
+        "BQB_IS",
+        "rhea/20847"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102391"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PCm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PYRUVATE-CARBOXYLASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/6.4.1.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00344"
+      ]
+    ]
+  },
+  "CSm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/CSm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/16845"
+      ],
+      [
+        "BQB_IS",
+        "rhea/16848"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96920"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/CSm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CITSYN-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.3.3.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00351"
+      ]
+    ]
+  },
+  "CITRtr": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/CITRtr"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/CITtam"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96753"
+      ]
+    ]
+  },
+  "ACONTm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACONTm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/10339"
+      ],
+      [
+        "BQB_IS",
+        "rhea/10336"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95384"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACONTm"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.3"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01324"
+      ]
+    ]
+  },
+  "ICDHxm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ICDHxm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/23635"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100782"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ICDHxm"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.286"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00709"
+      ]
+    ]
+  },
+  "ICDHyrm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ICDHyrm"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ICDHym"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.42"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00267"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100781"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/19629"
+      ]
+    ]
+  },
+  "AKGDm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/AKGDm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/27786"
+      ],
+      [
+        "BQB_IS",
+        "rhea/27789"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95655"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/AKGDm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2OXOGLUTARATEDEH-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1.52"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R08549"
+      ]
+    ]
+  },
+  "SUCOAS1m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/SUCOAS1m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104637"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/SUCOAS1m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:SUCCINATE--COA-LIGASE-GDP-FORMING-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/6.2.1.4"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00432"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/22120"
+      ]
+    ]
+  },
+  "SUCD1m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/SUCD1m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99636"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/SUCD1m"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.3.5.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00408"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/30343"
+      ]
+    ]
+  },
+  "FUMm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FUMm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/12460"
+      ],
+      [
+        "BQB_IS",
+        "rhea/12463"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99705"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FUMm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FUMHYDR-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.2"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01082"
+      ]
+    ]
+  },
+  "MDHm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MDHm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/21432"
+      ],
+      [
+        "BQB_IS",
+        "rhea/21435"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101439"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MDHm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:MALATE-DEH-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.299"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00342"
+      ]
+    ]
+  },
+  "ACITL": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACITL"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/21163"
+      ],
+      [
+        "BQB_IS",
+        "rhea/21160"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95268"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00257"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACITL"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ATP-CITRATE-PRO-S--LYASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.3.3.8"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00352"
+      ]
+    ]
+  },
+  "MDH": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MDH"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/21432"
+      ],
+      [
+        "BQB_IS",
+        "rhea/21435"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101439"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00248"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MDH"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:MALATE-DEH-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.299"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00342"
+      ]
+    ]
+  },
+  "ME2": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ME2"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/18253"
+      ],
+      [
+        "BQB_IS",
+        "rhea/18256"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101443"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00161"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ME2"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:MALIC-NADP-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.40"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00216"
+      ]
+    ]
+  },
+  "ICITtr": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ICITtr"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ICITtr"
+      ]
+    ]
+  },
+  "AKGt2r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/AKGt2r"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95661"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR599"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn05493"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/AKGt2r"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRANS-RXN-23"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/29011"
+      ]
+    ]
+  },
+  "MALtm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MALtm"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101374"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MALtm"
+      ]
+    ]
+  },
+  "ICDHy": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ICDHy"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ICDHyr"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.42"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00267"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100781"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/19629"
+      ]
+    ]
+  },
+  "ACONT": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACONT"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/10339"
+      ],
+      [
+        "BQB_IS",
+        "rhea/10336"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95384"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00973"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACONT"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.3"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01324"
+      ]
+    ]
+  },
+  "FUM": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FUM"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/12460"
+      ],
+      [
+        "BQB_IS",
+        "rhea/12463"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99705"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00799"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FUM"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FUMHYDR-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.2"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01082"
+      ]
+    ]
+  },
+  "FUMtm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FUMtm"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99716"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FUMtm"
+      ]
+    ]
+  },
+  "SUCDi": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/SUCDi"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR69008"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99641"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn09272"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/SUCDi"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/29187"
+      ]
+    ]
+  },
+  "G6PDH2r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/G6PDH2r"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/15841"
+      ],
+      [
+        "BQB_IS",
+        "rhea/15844"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99907"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00604"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/G6PDH2r"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLU6PDEHYDROG-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.363"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00835"
+      ]
+    ]
+  },
+  "PGL": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PGL"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/12559"
+      ],
+      [
+        "BQB_IS",
+        "rhea/12556"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102539"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01476"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PGL"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:6PGLUCONOLACT-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/3.1.1.31"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02035"
+      ]
+    ]
+  },
+  "GND": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GND"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/10119"
+      ],
+      [
+        "BQB_IS",
+        "rhea/10116"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100389"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01115"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GND"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:RXN-9952"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.351"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01528"
+      ]
+    ]
+  },
+  "RPI": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/RPI"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104084"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00777"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/RPI"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.3.1.6"
+      ]
+    ]
+  },
+  "RPE": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/RPE"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104083"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01116"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/RPE"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:RIBULP3EPIM-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.1.3.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01529"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/13677"
+      ]
+    ]
+  },
+  "TKT1": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/TKT1"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104868"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01200"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/TKT1"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.2.1.1"
+      ]
+    ]
+  },
+  "TKT2": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/TKT2"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104869"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00785"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/TKT2"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2TRANSKETO-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.2.1.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01830"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/27626"
+      ]
+    ]
+  },
+  "TALA": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/TALA"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104715"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01333"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/TALA"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRANSALDOL-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.2.1.2"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01827"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/17053"
+      ]
+    ]
+  },
+  "FRUt1r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FRUt1r"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99663"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FRUt1r"
+      ]
+    ]
+  },
+  "KHK": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/KHK"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/18145"
+      ],
+      [
+        "BQB_IS",
+        "rhea/18148"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100936"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00627"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/KHK"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.1.3"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00866"
+      ]
+    ]
+  },
+  "FBA2": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FBA2"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/30851"
+      ],
+      [
+        "BQB_IS",
+        "rhea/30854"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99460"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01870"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FBA2"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.1.2.13"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02568"
+      ]
+    ]
+  },
+  "PFK26": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PFK26"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/15653"
+      ],
+      [
+        "BQB_IS",
+        "rhea/15656"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102508"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01971"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PFK26"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:6-PHOSPHOFRUCTO-2-KINASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.1.105"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02732"
+      ]
+    ]
+  },
+  "FBP26": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/FBP26"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR99466"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/FBP26"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:3.1.3.46-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/3.1.3.46"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02731"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/17289"
+      ]
+    ]
+  },
+  "TRIOK": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/TRIOK"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR104940"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00780"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/TRIOK"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRIOKINASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.7.1.28"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01059"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/13941"
+      ]
+    ]
+  },
+  "ACACt2m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACACt2m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95207"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACACt2m"
+      ]
+    ]
+  },
+  "AACOAT": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/AACOAT"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/16117"
+      ],
+      [
+        "BQB_IS",
+        "rhea/16120"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95136"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00988"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/AACOAT"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETOACETATE--COA-LIGASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/6.2.1.16"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01357"
+      ]
+    ]
+  },
+  "ACACT1r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACACT1r"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/21039"
+      ],
+      [
+        "BQB_IS",
+        "rhea/21036"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95194"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00178"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACACT1r"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETYL-COA-ACETYLTRANSFER-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.3.1.9"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00238"
+      ]
+    ]
+  },
+  "NADH2_u10m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/NADH2_u10m"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/NADH2_u10m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101867"
+      ]
+    ]
+  },
+  "CYOR_u10m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/CYOR_u10m"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/CYOR_u10m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96977"
+      ]
+    ]
+  },
+  "CYO1b": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/CYO1b"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR68605"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96966"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00058"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/CYO1b"
+      ]
+    ]
+  },
+  "ATPS4m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ATPS4m"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ATPS4m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ATPSYN-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/3.6.3.14"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96136"
+      ]
+    ]
+  },
+  "ALATA_L": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ALATA_L"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/19453"
+      ],
+      [
+        "BQB_IS",
+        "rhea/19456"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95698"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00191"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ALATA_L"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ALANINE-AMINOTRANSFERASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.6.1.2"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00258"
+      ]
+    ]
+  },
+  "ASPTAm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ASPTAm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/21827"
+      ],
+      [
+        "BQB_IS",
+        "rhea/21824"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96079"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ASPTAm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ASPAMINOTRANS-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.6.1.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00355"
+      ]
+    ]
+  },
+  "GLUDxm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GLUDxm"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GDHm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLUTAMATE-DEHYDROGENASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.4.1.2"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00243"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100085"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/15133"
+      ]
+    ]
+  },
+  "LEUTAm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/LEUTAm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/18321"
+      ],
+      [
+        "BQB_IS",
+        "rhea/18324"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96229"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/LEUTAm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:BRANCHED-CHAINAMINOTRANSFERLEU-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.6.1.42"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01090"
+      ]
+    ]
+  },
+  "OIVD1m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/OIVD1m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/25177"
+      ],
+      [
+        "BQB_IS",
+        "rhea/25180"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102172"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/OIVD1m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2KETO-4METHYL-PENTANOATE-DEHYDROG-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01651"
+      ]
+    ]
+  },
+  "ACOAD8m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACOAD8m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/12276"
+      ],
+      [
+        "BQB_IS",
+        "rhea/31066"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95318"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACOAD8m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:RXN-14264"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.3.8.4"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R04095"
+      ]
+    ]
+  },
+  "MCCCrm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MCCCrm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/13592"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101411"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MCCCrm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHYLCROTONYL-COA-CARBOXYLASE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/6.4.1.4"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R04138"
+      ]
+    ]
+  },
+  "MGCHrm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MGCHrm"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101513"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MGCHrm"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.18"
+      ]
+    ]
+  },
+  "HMGLm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/HMGLm"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100662"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/HMGLm"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.1.3.4"
+      ]
+    ]
+  },
+  "ACACT1rm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACACT1rm"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACACT1m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETYL-COA-ACETYLTRANSFER-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.3.1.9"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00238"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95194"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/21036"
+      ]
+    ]
+  },
+  "OCOAT1m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/OCOAT1m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/25483"
+      ],
+      [
+        "BQB_IS",
+        "rhea/25480"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102148"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/OCOAT1m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:RXNI-2"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.8.3.5"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00410"
+      ]
+    ]
+  },
+  "VALTAm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/VALTAm"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/VALTAim"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:BRANCHED-CHAINAMINOTRANSFERVAL-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.6.1.42"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01214"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96230"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/24813"
+      ]
+    ]
+  },
+  "OIVD2m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/OIVD2m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/14000"
+      ],
+      [
+        "BQB_IS",
+        "rhea/13997"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102173"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/OIVD2m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:1.2.1.25-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1.25"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01210"
+      ]
+    ]
+  },
+  "ACOAD9m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACOAD9m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95319"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACOAD9m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:MEPROPCOA-FAD-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.3.8"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/31099"
+      ]
+    ]
+  },
+  "ECOAH12m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ECOAH12m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/31178"
+      ],
+      [
+        "BQB_IS",
+        "rhea/31175"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR97885"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ECOAH12m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHYLACYLYLCOA-HYDROXY-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.17"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R04224"
+      ]
+    ]
+  },
+  "HBCOAHL3": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/3HBCOAHL"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR94891"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR32754"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn03433"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/3HBCOAHL"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/3.1.2.4"
+      ]
+    ]
+  },
+  "HIBDm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/HIBDm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/17681"
+      ],
+      [
+        "BQB_IS",
+        "rhea/17684"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100634"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/HIBDm"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.31"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02047"
+      ]
+    ]
+  },
+  "MMSAD1m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MMSAD1m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/20807"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101662"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MMSAD1m"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1.27"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00922"
+      ]
+    ]
+  },
+  "PPCOACm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/PPCOACm"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/PPCOACm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PROPIONYL-COA-CARBOXY-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/6.4.1.3"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R01859"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR103100"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/23720"
+      ]
+    ]
+  },
+  "MME": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MME"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101657"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR83385"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn01996"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MME"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHYLMALONYL-COA-EPIM-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.1.99.1"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02765"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/20553"
+      ]
+    ]
+  },
+  "MMMm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MMMm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/22888"
+      ],
+      [
+        "BQB_IS",
+        "rhea/22891"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR101661"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MMMm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHYLMALONYL-COA-MUT-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/5.4.99.2"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00833"
+      ]
+    ]
+  },
+  "ILETAm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ILETAm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/24804"
+      ],
+      [
+        "BQB_IS",
+        "rhea/24801"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR96228"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ILETAm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:BRANCHED-CHAINAMINOTRANSFERILEU-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.6.1.42"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R02199"
+      ]
+    ]
+  },
+  "OIVD3": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/OIVD3"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR102174"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR79602"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn02269"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/OIVD3"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2KETO-3METHYLVALERATE-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.2.1"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/30907"
+      ]
+    ]
+  },
+  "ACOAD10m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ACOAD10m"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95306"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ACOAD10m"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.3.99.3"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/43780"
+      ]
+    ]
+  },
+  "ECOAH9m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ECOAH9m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/31122"
+      ],
+      [
+        "BQB_IS",
+        "rhea/31119"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR97894"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ECOAH9m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TIGLYLCOA-HYDROXY-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/4.2.1.17"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R04204"
+      ]
+    ]
+  },
+  "HACD9m": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/HACD9m"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/13281"
+      ],
+      [
+        "BQB_IS",
+        "rhea/13284"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100550"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/HACD9m"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:1.1.1.178-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.1.1.178"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R04203"
+      ]
+    ]
+  },
+  "MACCOAT": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/MACCOAT"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95195"
+      ],
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR342"
+      ]
+    ],
+    "seed": [
+      [
+        "BQB_IS",
+        "seed/rxn00676"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/MACCOAT"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHYLACETOACETYLCOATHIOL-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/2.3.1.16"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00927"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/30719"
+      ]
+    ]
+  },
+  "GLNtm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GLNtm"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100259"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GLNtm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRANS-RXN-233"
+      ]
+    ]
+  },
+  "GLUNm": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GLUNm"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/15892"
+      ],
+      [
+        "BQB_IS",
+        "rhea/15889"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100030"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GLUNm"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLUTAMIN-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.4.1.13"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00256"
+      ]
+    ]
+  },
+  "GLUDym": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GLUDym"
+      ]
+    ],
+    "rhea": [
+      [
+        "BQB_IS",
+        "rhea/11612"
+      ],
+      [
+        "BQB_IS",
+        "rhea/11615"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100086"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GLUDym"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLUTDEHYD-RXN"
+      ]
+    ],
+    "ec-code": [
+      [
+        "BQB_IS",
+        "ec-code/1.4.1.13"
+      ]
+    ],
+    "kegg.reaction": [
+      [
+        "BQB_IS",
+        "kegg.reaction/R00248"
+      ]
+    ]
+  },
+  "ALAPAT4te": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/ALAPAT4te"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/ALAPAT4te"
+      ]
+    ]
+  },
+  "BALAtmr": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/BALAtmr"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR95682"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/BALAtmr"
+      ]
+    ]
+  },
+  "GLNt2r": {
+    "vmhreaction": [
+      [
+        "BQB_IS",
+        "vmhreaction/GLNt2r"
+      ]
+    ],
+    "bigg.reaction": [
+      [
+        "BQB_IS",
+        "bigg.reaction/GLNt2r"
+      ]
+    ],
+    "metanetx.reaction": [
+      [
+        "BQB_IS",
+        "metanetx.reaction/MNXR100260"
+      ]
+    ]
+  }
+}

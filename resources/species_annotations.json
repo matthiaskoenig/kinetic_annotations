@@ -1,0 +1,6502 @@
+{
+  "aacoa": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/aacoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/aacoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00332"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01484"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001484"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETOACETYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11756"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM133"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-191293"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00279"
+      ]
+    ]
+  },
+  "aacoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/aacoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/aacoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00332"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01484"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001484"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETOACETYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11756"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM133"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-191293"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00279"
+      ]
+    ]
+  },
+  "acac": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/acac"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/acac"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00164"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00060"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000060"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:3-KETOBUTYRATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:131367"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM154"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29666"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00142"
+      ]
+    ]
+  },
+  "acac_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/acac"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/acac"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00164"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00060"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000060"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:3-KETOBUTYRATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:131367"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM154"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29666"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00142"
+      ]
+    ]
+  },
+  "accoa": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/accoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/accoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00024"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001206"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01206"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13712"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM21"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113559"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00022"
+      ]
+    ]
+  },
+  "accoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/accoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/accoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00024"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001206"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01206"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ACETYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13712"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM21"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113559"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00022"
+      ]
+    ]
+  },
+  "adp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/adp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/adp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00008"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01341"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001341"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ADP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13222"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM7"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113581"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00008"
+      ]
+    ]
+  },
+  "adp_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/adp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/adp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00008"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01341"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001341"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ADP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13222"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM7"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113581"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00008"
+      ]
+    ]
+  },
+  "ala": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ala_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ala__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00041"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00161"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000161"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-ALPHA-ALANINE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13069"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM32"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29432"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00035"
+      ]
+    ]
+  },
+  "ala_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ala_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ala__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00041"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00161"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000161"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-ALPHA-ALANINE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13069"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM32"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29432"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00035"
+      ]
+    ]
+  },
+  "amp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/amp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/amp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00020"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000045"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:AMP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12056"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM14"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-109275"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00018"
+      ]
+    ]
+  },
+  "asp_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/asp_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/asp__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00049"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000191"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00191"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-ASPARTATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13085"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM42"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113553"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00041"
+      ]
+    ]
+  },
+  "atp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/atp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/atp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00002"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000538"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ATP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10789"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM3"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113592"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00002"
+      ]
+    ]
+  },
+  "atp_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/atp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/atp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00002"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000538"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ATP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10789"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM3"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113592"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00002"
+      ]
+    ]
+  },
+  "bpg13": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/13dpg"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/13dpg"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00236"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB62758"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001270"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:DPG"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11881"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM261"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29800"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00203"
+      ]
+    ]
+  },
+  "cit": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/cit"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/cit"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00158"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00094"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000094"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CIT"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:132362"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM131"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29654"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00137"
+      ]
+    ]
+  },
+  "cit_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/cit"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/cit"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00158"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00094"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000094"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CIT"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:132362"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM131"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29654"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00137"
+      ]
+    ]
+  },
+  "co2": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/co2"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/co2"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00011"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01967"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001967"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CARBON-DIOXIDE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13282"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM13"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1132345"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00011"
+      ]
+    ]
+  },
+  "co2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/co2"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/co2"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00011"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01967"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001967"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CARBON-DIOXIDE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13282"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM13"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1132345"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00011"
+      ]
+    ]
+  },
+  "coa": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/coa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/coa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00010"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01423"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001423"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CO-A"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13294"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM12"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-162743"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00010"
+      ]
+    ]
+  },
+  "coa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/coa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/coa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00010"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01423"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001423"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CO-A"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13294"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM12"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-162743"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00010"
+      ]
+    ]
+  },
+  "cytcox_mm": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ficytC"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ficytC"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00125"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-16495"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14235"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM5749"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00410"
+      ]
+    ]
+  },
+  "cytcred_mm": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/focytC"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/focytC"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00126"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C00125"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-16495"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14235"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM5749"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00410"
+      ]
+    ]
+  },
+  "dhap": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/dhap"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/dhap"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00111"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001473"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01473"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:DIHYDROXY-ACETONE-PHOSPHATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14341"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM77"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-188451"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00095"
+      ]
+    ]
+  },
+  "e4p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/e4p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/e4p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00279"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001321"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01321"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ERYTHROSE-4P"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12921"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM258"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29878"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00236"
+      ]
+    ]
+  },
+  "ala_ext": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ala_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ala__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00041"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00161"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000161"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-ALPHA-ALANINE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13069"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM32"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29432"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00035"
+      ]
+    ]
+  },
+  "fru_ext": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fru"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fru"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00095"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C02336"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB62538"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000660"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-15382"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12923"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM175"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-189049"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00082"
+      ]
+    ]
+  },
+  "glc_ext": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/glc_D"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/glc__D"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00031"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00122"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000122"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:Glucopyranose"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12965"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM41"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00027"
+      ]
+    ]
+  },
+  "gln_ext": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/gln_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/gln__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00064"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00641"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000641"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLN"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13110"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM37"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113522"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00053"
+      ]
+    ]
+  },
+  "lac_ext": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/lac_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/lac__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00186"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00190"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000190"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-LACTATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11065"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM179"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29708"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00159"
+      ]
+    ]
+  },
+  "f1p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/f1p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/f1p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01094"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001076"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:D-fructofuranose-1-phosphate"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:20930"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM145568"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00802"
+      ]
+    ]
+  },
+  "f26bp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/f26bp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/f26bp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00665"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01047"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001047"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-535"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12351"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM651"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-30533"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00503"
+      ]
+    ]
+  },
+  "f6p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/f6p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/f6p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00085"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C05345"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000124"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB03971"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FRUCTOSE-6P"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10375"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM89621"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd19035"
+      ]
+    ]
+  },
+  "fad_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fad"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fad"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00016"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001248"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01248"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FAD"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13315"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM33"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113596"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00015"
+      ]
+    ]
+  },
+  "fadh2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fadh2"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fadh2"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01352"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001197"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FADH2"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13316"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM38"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-164934"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00982"
+      ]
+    ]
+  },
+  "fbp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fdp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fdp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00354"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001058"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:37736"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM417"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00290"
+      ]
+    ]
+  },
+  "fru": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fru"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fru"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00095"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C02336"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB62538"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000660"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-15382"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12923"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM175"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-189049"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00082"
+      ]
+    ]
+  },
+  "fum": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fum"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fum"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00122"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00134"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000134"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FUM"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14284"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM93"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113588"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00106"
+      ]
+    ]
+  },
+  "fum_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/fum"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/fum"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00122"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00134"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000134"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:FUM"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14284"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM93"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113588"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00106"
+      ]
+    ]
+  },
+  "g6p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/g6p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/g6p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00092"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001401"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01401"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:D-glucopyranose-6-phosphate"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14314"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM160"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1629756"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00079"
+      ]
+    ]
+  },
+  "gdp_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/gdp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/gdp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00035"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001201"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GDP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13327"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM30"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-111349"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00031"
+      ]
+    ]
+  },
+  "glc": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/glc_D"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/glc__D"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00031"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00122"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000122"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:Glucopyranose"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12965"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM41"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00027"
+      ]
+    ]
+  },
+  "glu_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/glu_D"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/glu__D"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0003339"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB03339"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:D-GLT"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12979"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00217"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM331"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00186"
+      ]
+    ]
+  },
+  "gln": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/gln_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/gln__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00064"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00641"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000641"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLN"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13110"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM37"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113522"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00053"
+      ]
+    ]
+  },
+  "gln_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/gln_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/gln__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00064"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00641"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000641"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLN"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13110"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM37"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113522"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00053"
+      ]
+    ]
+  },
+  "glyald": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/glyald"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/glyald"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C02154"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C00577"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001051"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GLYCERALD"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12982"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM435"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-30393"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00448"
+      ]
+    ]
+  },
+  "grap": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/g3p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/g3p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00118"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GAP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12983"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01112"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM74"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29578"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00102"
+      ]
+    ]
+  },
+  "gtp_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/gtp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/gtp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00044"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001273"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:GTP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13342"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM51"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113573"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00038"
+      ]
+    ]
+  },
+  "h": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/h"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/h"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00080"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0059597"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB59597"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PROTON"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10744"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM1"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1132304"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00067"
+      ]
+    ]
+  },
+  "h2o": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/h2o"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/h2o"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00001"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB02111"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0002111"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-15815"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10743"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM2"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-109276"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00001"
+      ]
+    ]
+  },
+  "h2o_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/h2o"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/h2o"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00001"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB02111"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0002111"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-15815"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10743"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM2"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-109276"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00001"
+      ]
+    ]
+  },
+  "h_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/h"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/h"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00080"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0059597"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB59597"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PROTON"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10744"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM1"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1132304"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00067"
+      ]
+    ]
+  },
+  "hco3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/hco3"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/hco3"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00288"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00595"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000595"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CO3"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13351"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM60"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-111627"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00242"
+      ]
+    ]
+  },
+  "hibutcoa3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3hibutcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3hibutcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01144"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C04047"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-12173"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11048"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01052"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM446"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-77251"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00842"
+      ]
+    ]
+  },
+  "hmbcoa3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3hmbcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3hmbcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C04405"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001356"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01356"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-METHYL-3-HYDROXY-BUTYRYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10871"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM701"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd02691"
+      ]
+    ]
+  },
+  "hmgcoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/hmgcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/hmgcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00356"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001375"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01375"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11814"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM36493"
+      ]
+    ]
+  },
+  "hmp3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3hmp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3hmp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01188"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C06001"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000023"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB62640"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:3-HYDROXY-ISOBUTYRATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11805"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM396"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-573404"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00876"
+      ]
+    ]
+  },
+  "ibcoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ibcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ibcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00630"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001243"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01243"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ISOBUTYRYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11629"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM470"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70851"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00481"
+      ]
+    ]
+  },
+  "ile_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ile_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ile__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00407"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00172"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000172"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ILE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13127"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM231"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113537"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00322"
+      ]
+    ]
+  },
+  "isocit": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/icit"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/icit"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00311"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000193"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00193"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14465"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM89661"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00260"
+      ]
+    ]
+  },
+  "isocit_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/icit"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/icit"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00311"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000193"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00193"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14465"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM89661"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00260"
+      ]
+    ]
+  },
+  "ivcoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ivcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ivcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C02939"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001113"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01113"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ISOVALERYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11856"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM471"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70715"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd01882"
+      ]
+    ]
+  },
+  "lac": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/lac_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/lac__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00186"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00190"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000190"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:L-LACTATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11065"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM179"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29708"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00159"
+      ]
+    ]
+  },
+  "leu_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/leu_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/leu__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00123"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000687"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00687"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:LEU"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10866"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM140"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113580"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00107"
+      ]
+    ]
+  },
+  "maacoa2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/2maacoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/2maacoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03344"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01157"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001157"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-METHYL-ACETO-ACETYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11613"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM524"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70836"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd02124"
+      ]
+    ]
+  },
+  "mal": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/mal_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/mal__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00149"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00156"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000156"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:MAL"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11066"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM98"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113544"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00130"
+      ]
+    ]
+  },
+  "mal_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/mal_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/mal__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00149"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00156"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000156"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:MAL"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11066"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM98"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113544"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00130"
+      ]
+    ]
+  },
+  "mb2coa2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/2mb2coa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/2mb2coa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03345"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0002054"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00993"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-1083"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10949"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM609"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70799"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd02125"
+      ]
+    ]
+  },
+  "mb2coa3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3mb2coa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3mb2coa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03069"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01493"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001493"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:3-METHYL-CROTONYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11853"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM389"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70744"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd01966"
+      ]
+    ]
+  },
+  "mbcoa2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/2mbcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/2mbcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01033"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001041"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01041"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-METHYL-BUTYRYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11616"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM569"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70718"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00760"
+      ]
+    ]
+  },
+  "mgcoa3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3mgcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3mgcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03231"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01057"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001057"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:TRANS-3-METHYL-GLUTACONYL-COA"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM91417"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70772"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd02068"
+      ]
+    ]
+  },
+  "mmcoa_R_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/mmcoa_R"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/mmcoa__R"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01213"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0002255"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB02255"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHYL-MALONYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10976"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM608"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-71009"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00891"
+      ]
+    ]
+  },
+  "mmcoa_S_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/mmcoa_S"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/mmcoa__S"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00683"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB02310"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001269"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:D-METHYL-MALONYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11038"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM89955"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-71019"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00519"
+      ]
+    ]
+  },
+  "mob3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3mob"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3mob"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00141"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000019"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-KETO-ISOVALERATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11851"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM238"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00123"
+      ]
+    ]
+  },
+  "mop2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/2mop"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/2mop"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00349"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001172"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01172"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-12179"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11609"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM305"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-30004"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00287"
+      ]
+    ]
+  },
+  "mop3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3mop"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3mop"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03465"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C00671"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000491"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-KETO-3-METHYL-VALERATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10888"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM439"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00508"
+      ]
+    ]
+  },
+  "mop4_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/4mop"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/4mop"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00233"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000695"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2K-4CH3-PENTANOATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12020"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM404"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00200"
+      ]
+    ]
+  },
+  "mp2coa2_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/2mp2coa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/2mp2coa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03460"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001011"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01011"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:METHACRYLYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:1208"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM947"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70858"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd02187"
+      ]
+    ]
+  },
+  "nad": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nad"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nad"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00003"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000902"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NAD"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13393"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM8"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113526"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00003"
+      ]
+    ]
+  },
+  "nad_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nad"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nad"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00003"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000902"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NAD"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13393"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM8"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113526"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00003"
+      ]
+    ]
+  },
+  "nadh": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nadh"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nadh"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00004"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01487"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001487"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NADH"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13395"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM10"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-192305"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00004"
+      ]
+    ]
+  },
+  "nadh_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nadh"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nadh"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00004"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01487"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001487"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NADH"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13395"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM10"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-192305"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00004"
+      ]
+    ]
+  },
+  "nadp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nadp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nadp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00006"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000217"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NADP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13397"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM5"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113563"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00006"
+      ]
+    ]
+  },
+  "nadp_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nadp"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nadp"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00006"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000217"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NADP"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13397"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM5"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113563"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00006"
+      ]
+    ]
+  },
+  "nadph": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nadph"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nadph"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00005"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00221"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000221"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NADPH"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13399"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM6"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113600"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00005"
+      ]
+    ]
+  },
+  "nadph_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nadph"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nadph"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00005"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00221"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000221"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:NADPH"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13399"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM6"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113600"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00005"
+      ]
+    ]
+  },
+  "nh3_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/nh4"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/nh4"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00014"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00051"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000051"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:AMMONIA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13405"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM15"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1132163"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00013"
+      ]
+    ]
+  },
+  "oaa": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/oaa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/oaa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00036"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00223"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000223"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ENOL-OXALOACETATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12820"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM46"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113587"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00032"
+      ]
+    ]
+  },
+  "oaa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/oaa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/oaa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00036"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00223"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000223"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:ENOL-OXALOACETATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12820"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM46"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113587"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00032"
+      ]
+    ]
+  },
+  "akg": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/akg"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/akg"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00026"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB62781"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000208"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-KETOGLUTARATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11638"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM20"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113594"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00024"
+      ]
+    ]
+  },
+  "akg_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/akg"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/akg"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00026"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB62781"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000208"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-KETOGLUTARATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11638"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM20"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113594"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00024"
+      ]
+    ]
+  },
+  "p6g": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/6pgc"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/6pgc"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00345"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001316"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01316"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-2961"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12232"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM325"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29996"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00284"
+      ]
+    ]
+  },
+  "p6gl": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/6pgl"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/6pgl"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C01236"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB62628"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001127"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:D-6-P-GLUCONO-DELTA-LACTONE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:12233"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM429"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-31467"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00911"
+      ]
+    ]
+  },
+  "pep": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/pep"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/pep"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00074"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00263"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000263"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PHOSPHO-ENOL-PYRUVATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14812"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM73"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29492"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00061"
+      ]
+    ]
+  },
+  "pg2": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/2pg"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/2pg"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00631"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0003391"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB03391"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:2-PG"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11651"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM275"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-30485"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00482"
+      ]
+    ]
+  },
+  "pg3": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/3pg"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/3pg"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00197"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0060180"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:G3P"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:11879"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM126"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29728"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00169"
+      ]
+    ]
+  },
+  "phos": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/pi"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/pi"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00009"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00973"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001429"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-16459"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14791"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM9"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-109277"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00009"
+      ]
+    ]
+  },
+  "phos_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/pi"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/pi"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00009"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00973"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001429"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-16459"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14791"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM9"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-109277"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00009"
+      ]
+    ]
+  },
+  "pp": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ppi"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ppi"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00013"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000250"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00250"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PPI"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13420"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM11"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-111294"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00012"
+      ]
+    ]
+  },
+  "ppcoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ppcoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ppcoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00100"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01275"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001275"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PROPIONYL-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14904"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM86"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-192314"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00086"
+      ]
+    ]
+  },
+  "pyr": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/pyr"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/pyr"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00022"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000243"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00243"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PYRUVATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14987"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM23"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113557"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00020"
+      ]
+    ]
+  },
+  "pyr_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/pyr"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/pyr"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00022"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000243"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00243"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:PYRUVATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:14987"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM23"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113557"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00020"
+      ]
+    ]
+  },
+  "r5p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/r5p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/r5p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C03736"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C00117"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001548"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-15318"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10270"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM15900"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd19028"
+      ]
+    ]
+  },
+  "ru5p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/ru5p_D"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/ru5p__D"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00199"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000618"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00618"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:RIBULOSE-5P"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13018"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM145"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29732"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00171"
+      ]
+    ]
+  },
+  "s7p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/s7p"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/s7p"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C05382"
+      ],
+      [
+        "BQB_IS",
+        "kegg.compound/C00281"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001068"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01068"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:D-SEDOHEPTULOSE-7-P"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:15073"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM271"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29882"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00238"
+      ]
+    ]
+  },
+  "succ_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/succ"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/succ"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00042"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000254"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB00254"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:SUC"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:132287"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM25"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113536"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00036"
+      ]
+    ]
+  },
+  "succoa_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/succoa"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/succoa"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00091"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01022"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001022"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:SUC-COA"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10746"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM92"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-70958"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00078"
+      ]
+    ]
+  },
+  "ubiquinol_mm": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/q8h2"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/q8h2"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001060"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB01060"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:CPD-9956"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:61682"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM191"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd15561"
+      ]
+    ]
+  },
+  "ubiquinone_mm": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/q8"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/q8"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:UBIQUINONE-8"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:61683"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C17569"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM232"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd15560"
+      ]
+    ]
+  },
+  "val_mito": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/val_L"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/val__L"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00183"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00883"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000883"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:VAL"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13186"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM199"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-113540"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00156"
+      ]
+    ]
+  },
+  "x5p": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/xu5p_D"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/xu5p__D"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00231"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB00868"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0000868"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:XYLULOSE-5-PHOSPHATE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:13036"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM186"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-29790"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00198"
+      ]
+    ]
+  },
+  "o2": {
+    "vmhmetabolite": [
+      [
+        "BQB_IS",
+        "vmhmetabolite/o2"
+      ]
+    ],
+    "bigg.metabolite": [
+      [
+        "BQB_IS",
+        "bigg.metabolite/o2"
+      ]
+    ],
+    "kegg.compound": [
+      [
+        "BQB_IS",
+        "kegg.compound/C00007"
+      ]
+    ],
+    "hmdb": [
+      [
+        "BQB_IS",
+        "hmdb/HMDB01377"
+      ],
+      [
+        "BQB_IS",
+        "hmdb/HMDB0001377"
+      ]
+    ],
+    "biocyc": [
+      [
+        "BQB_IS",
+        "biocyc/META:OXYGEN-MOLECULE"
+      ]
+    ],
+    "chebi": [
+      [
+        "BQB_IS",
+        "chebi/CHEBI:10745"
+      ]
+    ],
+    "metnetx.chemical": [
+      [
+        "BQB_IS",
+        "metanetx.chemical/MNXM4"
+      ]
+    ],
+    "reactome": [
+      [
+        "BQB_IS",
+        "reactome/R-ALL-1131511"
+      ]
+    ],
+    "seed.compound": [
+      [
+        "BQB_IS",
+        "seed.compound/cpd00007"
+      ]
+    ]
+  }
+}

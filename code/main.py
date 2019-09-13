@@ -8,7 +8,13 @@ parse_kinetic_parameters(results_path=RESULTS_PATH, parameters_path=PARAMETER_JS
 # parameters SBML
 create_model(modules=['parameters_sbml'],
              target_dir=RESULTS_PATH,
+             filename="brenda_parameters.xml",
              create_report=False,
              validate=False)
 
+create_model(modules=['query_sbml'],
+             target_dir=RESULTS_PATH,
+             filename="brenda_query.xml",
+             create_report=False,
+             validate=False)
 

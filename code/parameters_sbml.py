@@ -154,5 +154,6 @@ if __name__ == "__main__":
     from sbmlutils.modelcreator.creator import create_model
     create_model(modules=['parameters_sbml'],
                  target_dir=RESULTS_PATH,
+                 filename="brenda_parameters.xml",
                  create_report=False,
                  validate=False)
