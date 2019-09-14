@@ -1,0 +1,3179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="SBML report">
+    <meta name="author" content="Matthias König">
+
+    <link rel="icon" href="_report/images/sbml.ico">
+    <title>brenda_query_1</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="_report/css/sbmlreport.css"/>-->
+
+    <style>
+        /* Show it is fixed to the top */
+        body {
+          min-height: 75rem;
+          padding-top: 5.0rem;
+        }
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -5.0rem;
+            visibility: hidden;
+        }
+
+        .table-nonfluid {
+           /* width: auto; */
+            width: 70%;
+        }
+
+        .cvterm {
+            font-size: small;
+        }
+        .blue {
+            color: darkblue;
+        }
+        .darkgray {
+            color: #646464;
+        }
+        .gray {
+            color: #aaaaaa;
+        }
+        .red {
+            color: darkred;
+        }
+        .green {
+            color: darkgreen;
+        }
+
+        /* XML popup */
+        .parent .popup {
+          display: none;
+        }
+
+        .parent:hover .popup {
+            display: block;
+            margin-top: 9px;
+            border: 1px solid #bebebe;
+            padding: 16px 10px 10px 10px;
+            background: #ededed;
+        }
+
+        .ontology{
+            background-color: #5FBDCE;
+            padding:2px;
+            padding-right:4px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .collection {
+            background-color: white;
+            padding:2px;
+            padding-right:4px;
+            color: black;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .package {
+            background-color: black;
+            padding:2px;
+            padding-right:4px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .identifier{
+            background-color: #ffac1b;
+            padding:2px;
+            padding-right:4px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .purl{
+            color: grey;
+        }
+        .icon-invisible {
+            visibility: hidden;
+        }
+        .icon-black {
+            color: black;
+        }
+
+        /* References */
+        .ref-item {
+            list-style-type: none;
+        }
+        .ref-item a{
+            font-size: 10px;
+        }
+        .ref-title{
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .ref-authors{
+            font-size: 10px;
+        }
+        .ref-journal{
+            font-size: 10px;
+        }
+        .id{
+            background-color: #ffac1b;
+            padding:2px;
+            padding-right:4px;
+            color: black;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .term{
+            background-color: #ffac1b;
+            padding:2px;
+            padding-right:4px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .item{
+            background-color: gray;
+            padding:2px;
+            padding-right:4px;
+            color: black;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .comment{
+            background-color: gray;
+            padding:2px;
+            padding-right:4px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .cvterm{
+            border-radius: 15px;
+            background: #f9f9f9;
+            padding: 5px;
+        }
+        .history{
+            border-radius: 15px;
+            background: #ffffff;
+            padding: 5px;
+        }
+        .qualifier{
+            background-color: #13721c;
+            padding:2px;
+            padding-right:4px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .unit{
+            background-color: rgba(200, 200, 200, 0.51);
+            padding:2px;
+            padding-right:4px;
+            color: black;
+            font-family: monospace;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .math{
+            color: black;
+            font-family: monospace;
+        }
+    </style>
+
+
+    <!--<link rel="stylesheet" type="text/css" href="_report/css/bootstrap-theme-3.3.7.min.css">-->
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <!--https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js-->
+
+
+    <!-- MathJax not working offline -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      MathML: {
+        extensions: ["content-mathml.js"]
+      }
+    });
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $.extend( $.fn.dataTable.defaults, {
+                "searching": true,
+                "ordering": true
+            } );
+
+            var t_modeldefs = $('#table_modeldefs').dataTable({
+                "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_modeldefs.fnFilter($(this).val());
+            });
+
+            var t_submodels = $('#table_submodels').dataTable({
+                "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_submodels.fnFilter($(this).val());
+            });
+
+            var t_ports = $('#table_ports').dataTable({
+                "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_ports.fnFilter($(this).val());
+            });
+
+            var t_functions = $('#table_functions').dataTable({
+                "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_functions.fnFilter($(this).val());
+            });
+
+            var t_units = $('#table_units').dataTable({
+                "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_units.fnFilter($(this).val());
+            });
+
+            var t_compartments = $('#table_compartments').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+
+            });
+            $('#searchField').keyup(function(){
+                t_compartments.fnFilter($(this).val());
+            });
+
+            var t_species = $('#table_species').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_species.fnFilter($(this).val());
+            });
+
+            var t_geneproducts = $('#table_geneproducts').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_geneproducts.fnFilter($(this).val());
+            });
+
+            var t_parameters = $('#table_parameters').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_parameters.fnFilter($(this).val());
+            });
+
+            var t_assignments = $('#table_assignments').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_assignments.fnFilter($(this).val());
+            });
+
+            var t_rules = $('#table_rules').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_rules.fnFilter($(this).val());
+            });
+
+            var t_reactions = $('#table_reactions').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_reactions.fnFilter($(this).val());
+            });
+
+            var t_objectives = $('#table_objectives').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_objectives.fnFilter($(this).val());
+            });
+
+
+            var t_constraints = $('#table_constraints').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_constraints.fnFilter($(this).val());
+            });
+
+
+            var t_events = $('#table_events').dataTable({
+               "bPaginate": false,
+                "bInfo": false,
+                "dom": '<"top">rt<"bottom"><"clear">',
+                "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }]
+            });
+            $('#searchField').keyup(function(){
+                t_events.fnFilter($(this).val());
+            });
+
+            $('#searchField').val('');
+            $('#searchField').focus();
+
+        });
+    </script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#doc"><td id="brenda_query_1" class="active"><span class="package">brenda_query_1</span> <code>meta_brenda_query_1</code></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#anchor_model">Model</a></li>
+            <li class="nav-item"><a class="nav-link" href="#anchor_units">UnitDefinitions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#anchor_compartments">Compartments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#anchor_species">Species</a></li>
+            <li class="nav-item"><a class="nav-link" href="#anchor_reactions">Reactions</a></li>
+    </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input id="searchField" class="form-control mr-sm-2" accesskey="S" type="search" class="form-control" placeholder="Search" aria-label="Search">
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+
+    </form>
+       <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://github.com/matthiaskoenig/sbmlutils/" title="sbmlutils"><i class="fab fa-github fa-2x"></i></a></li>
+       </ul>
+  </div>
+</nav>
+
+
+<main role="main" class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <!-- CONTENT -->
+            <div class="content">
+    <a class="anchor" id="doc"></a>
+    <div class="row">
+        <div class="col-6">
+        <!--------------------------------------------------->
+        <!-- Model                                         -->
+        <!--------------------------------------------------->
+        <a class="anchor" id="anchor_model"></a>
+        <h1 id="model"><a href="brenda_query.xml" target="_blank" alt="Access SBML model" title="SBML model"><i class="fas fa-file-code"></i></a>&nbsp;Model : brenda_query_1</h1>
+        <b>Creator</b><br />Matthias, Koenig, Humboldt-University Berlin, Institute for Theoretical Biology, <a href="mailto:koenigmx@hu-berlin.de" target="_blank">koenigmx@hu-berlin.de</a><br /><b>Created:</b> 2019-09-13 13:15<br /><b>Modified:</b> 2019-09-13 13:15<br /><br />
+        <table id="table_model" class="table table-condensed table-nonfluid">
+            <tr>
+            <td>
+                    <table class="compact">
+                    <tbody>
+                    <tr><td class="active">id</td> <td id="brenda_query_1" class="active"><span class="package">brenda_query_1</span> <code>meta_brenda_query_1</code></tr>
+                    <tr><td class="active">name</td><td>brenda_query_1</td></tr>
+                    <tr><td class="active">time</td><td>s</td></tr>
+                    <tr><td class="active">substance</td><td>mmole</td></tr>
+                    <tr><td class="active">extent</td><td>mmole</td></tr>
+                    <tr><td class="active">volume</td><td>litre</td></tr>
+                    <tr><td class="active">area</td><td>m2</td></tr>
+                    <tr><td class="active">length</td><td>m</td></tr>
+                    </tbody>
+                    </table>
+                </td>
+                <td>
+                    <span class="package">L3V1</span> <span class="package">fbc-V2</span> <span class="package">comp-V1</span><br />
+                    <div class="cvterm"></div><br />
+                    <div class="cvterm"></div>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="col-6">
+        <!--------------------------------------------------->
+        <!-- SBMLDocument                                  -->
+        <!--------------------------------------------------->
+<notes>
+  <body xmlns="http://www.w3.org/1999/xhtml">
+    <h1>Model for querying kinetic parameters</h1>
+    <h2>Description</h2>
+    <p>This file contains a minimal glycolysis model for querying kinetic parameters.</p>
+    <p>
+    The SBML was created using
+    <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>
+    (<a href="https://doi.org/10.5281/zenodo.597149">https://doi.org/10.5281/zenodo.597149</a>).
+    </p>
+    <div class="dc:provenance">The content of this model has been carefully created in a manual research effort.</div>
+    <div class="dc:publisher">This file has been created by
+    <a href="https://livermetabolism.com" title="Matthias Koenig" target="_blank">Matthias Koenig</a>.</div>
+    <h2>Terms of use</h2>
+    <div class="dc:rightsHolder">Copyright © 2019 Matthias Koenig.</div>
+    <div class="dc:license">
+      <p>Redistribution and use of any part of this model, with or without modification, are permitted provided
+        that the following conditions are met:
+        <ol>
+        <li>Redistributions of this SBML file must retain the above copyright notice, this list of conditions and
+          the following disclaimer.</li>
+        <li>Redistributions in a different form must reproduce the above copyright notice, this list of conditions
+          and the following disclaimer in the documentation and/or other materials provided
+          with the distribution.</li>
+      </ol>
+        This model is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+        implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        </p>
+    </div>
+  </body>
+</notes><hr />        </div>
+
+    </div>
+
+    <!--------------------------------------------------->
+    <!-- ExternalModelDefinitions & ModelDefinitions   -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- Submodels -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- Ports -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- FunctionDefinitions -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- UnitDefinitions -->
+    <!--------------------------------------------------->
+    <p>
+        <a class="anchor" id="anchor_units"></a>
+        <table id="table_units" class="table table-condensed table-nonfluid table-hover">
+            <thead class="bg-secondary">
+            <tr>    <th scope="col" class="hidden">type</th>
+	<th scope="col" class="warning">UnitDefinitions [7]</th>
+	<th scope="col">name</th>
+	<th scope="col">units</th>
+    <th scope="col">sbo</th>
+    <th scope="col">cvterm</th>
+</tr>
+            </thead>
+            <tbody>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="s" class="active"><span class="package">s</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-s"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-s" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">s</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="s">
+  <listOfUnits>
+    <unit kind="second" exponent="1" scale="0" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <ci> s </ci>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="mmole" class="active"><span class="package">mmole</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-mmole"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-mmole" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">mmole</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="mmole">
+  <listOfUnits>
+    <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <times/>
+    <apply>
+      <power/>
+      <cn type="integer"> 10 </cn>
+      <apply>
+        <minus/>
+        <cn type="integer"> 3 </cn>
+      </apply>
+    </apply>
+    <ci> mole </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="m" class="active"><span class="package">m</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-m"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-m" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">m</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="m">
+  <listOfUnits>
+    <unit kind="metre" exponent="1" scale="0" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <ci> m </ci>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="m2" class="active"><span class="package">m2</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-m2"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-m2" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">m2</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="m2">
+  <listOfUnits>
+    <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <power/>
+    <ci> m </ci>
+    <cn type="integer"> 2 </cn>
+  </apply>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="mM" class="active"><span class="package">mM</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-mM"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-mM" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">mM</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="mM">
+  <listOfUnits>
+    <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+    <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="per_s" class="active"><span class="package">per_s</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-per_s"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-per_s" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">per_s</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="per_s">
+  <listOfUnits>
+    <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <cn type="integer"> 1 </cn>
+    <ci> s </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">UnitDefinition</td>
+	    <td id="per_mM_s" class="active"><span class="package">per_mM_s</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-per_mM_s"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-per_mM_s" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">per_mM_s</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><unitDefinition id="per_mM_s">
+  <listOfUnits>
+    <unit kind="mole" exponent="1" scale="-3" multiplier="-1"/>
+    <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+    <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+  </listOfUnits>
+</unitDefinition></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <ci> litre </ci>
+      <apply>
+        <times/>
+        <apply>
+          <minus/>
+          <cn> 1 </cn>
+        </apply>
+        <apply>
+          <power/>
+          <cn type="integer"> 10 </cn>
+          <apply>
+            <minus/>
+            <cn type="integer"> 3 </cn>
+          </apply>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> s </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+            </tbody>
+        </table>
+    </p>
+
+    <!--------------------------------------------------->
+    <!-- Compartments -->
+    <!--------------------------------------------------->
+    <p>
+        <a class="anchor" id="anchor_compartments"></a>
+        <table id="table_compartments" class="table table-condensed table-nonfluid table-hover">
+            <thead class="bg-secondary">
+            <tr>    <th scope="col" class="hidden">type</th>
+	<th scope="col" class="warning">Compartments [4]</th>
+	<th scope="col">name</th>
+	<th scope="col">size</th>
+	<th scope="col">constant</th>
+	<th scope="col">spatial dimensions</th>
+	<th scope="col">units</th>
+	<th scope="col">derived units</th>
+    <th scope="col">sbo</th>
+    <th scope="col">cvterm</th>
+</tr>
+            </thead>
+            <tbody>
+                <tr>    <td class="hidden">Compartment</td>
+	    <td id="ext" class="active"><span class="package">ext</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-ext"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-ext" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">ext</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><compartment id="ext" name="external compartment (blood)" spatialDimensions="3" size="1" units="litre" constant="true"/></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>external compartment (blood)</td>
+	<td>1.0</td>
+	<td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td>3</td>
+	<td>litre</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <ci> litre </ci>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">Compartment</td>
+	    <td id="pancreas" class="active"><span class="package">pancreas</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-pancreas"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-pancreas" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">pancreas</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><compartment id="pancreas" name="pancreas" spatialDimensions="3" size="1" units="litre" constant="true"/></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>pancreas</td>
+	<td>1.0</td>
+	<td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td>3</td>
+	<td>litre</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <ci> litre </ci>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">Compartment</td>
+	    <td id="cyto" class="active"><span class="package">cyto</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-cyto"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-cyto" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">cyto</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><compartment id="cyto" name="pancreas cytosol" spatialDimensions="3" size="1" units="litre" constant="true"/></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>pancreas cytosol</td>
+	<td>1.0</td>
+	<td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td>3</td>
+	<td>litre</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <ci> litre </ci>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+                <tr>    <td class="hidden">Compartment</td>
+	    <td id="pm" class="active"><span class="package">pm</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-pm"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-pm" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">pm</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><compartment id="pm" name="plasma membrane" spatialDimensions="2" size="1" units="m2" constant="true"/></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>plasma membrane</td>
+	<td>1.0</td>
+	<td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td>2</td>
+	<td>m2</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <power/>
+    <ci> m </ci>
+    <cn type="integer"> 2 </cn>
+  </apply>
+</math></td>
+	<td></td>
+	<td></td>
+</tr>
+            </tbody>
+        </table>
+    </p>
+
+    <!--------------------------------------------------->
+    <!-- Species -->
+    <!--------------------------------------------------->
+    </p>
+        <a class="anchor" id="anchor_species"></a>
+        <table id="table_species" class="table table-condensed table-nonfluid table-hover">
+            <thead class="bg-secondary">
+            <tr>    <th scope="col" class="hidden">type</th>
+	<th scope="col" class="warning">Species [22]</th>
+    <th scope="col">name</th>
+	<th scope="col">compartment</th>
+    <th scope="col">hasOnlySubstanceUnits</th>
+	<th scope="col">boundaryCondition</th>
+	<th scope="col">constant</th>
+	<th scope="col">initialAmount</th>
+	<th scope="col">initialConcentration</th>
+    <th scope="col">conversionFactor</th>
+    <th scope="col">units</th>
+	<th scope="col">substanceUnits</th>
+	<th scope="col">derivedUnits</th>
+    <th scope="col">sbo</th>
+    <th scope="col">cvterm</th>
+</tr>
+            </thead>
+            <tbody>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="glc_ext" class="active"><span class="package">glc_ext</span> <code>meta_glc_ext</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-glc_ext"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-glc_ext" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">glc_ext</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_glc_ext" id="glc_ext" name="D-glucose" compartment="ext" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true" fbc:charge="0" fbc:chemicalFormula="C6H12O6">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_glc_ext">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/glc_D"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/glc__D"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00031"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00122"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000122"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:Glucopyranose"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:12965"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM41"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00027"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>D-glucose<br /><code>C6H12O6 </code></td>
+	<td>ext</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/glc_D" target="_blank">glc_D</a>; <a href="https://identifiers.org/bigg.metabolite/glc__D" target="_blank">glc__D</a>; <a href="https://identifiers.org/kegg.compound/C00031" target="_blank">C00031</a>; <a href="https://identifiers.org/hmdb/HMDB00122" target="_blank">HMDB00122</a>; <a href="https://identifiers.org/hmdb/HMDB0000122" target="_blank">HMDB0000122</a>; <a href="https://identifiers.org/biocyc/META:Glucopyranose" target="_blank">META:Glucopyranose</a>; <a href="https://identifiers.org/chebi/CHEBI:12965" target="_blank">CHEBI:12965</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM41" target="_blank">MNXM41</a>; <a href="https://identifiers.org/seed.compound/cpd00027" target="_blank">cpd00027</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="lac_ext" class="active"><span class="package">lac_ext</span> <code>meta_lac_ext</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-lac_ext"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-lac_ext" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">lac_ext</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_lac_ext" id="lac_ext" name="lactate" compartment="ext" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true" fbc:charge="-1" fbc:chemicalFormula="C3H5O3">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_lac_ext">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/lac_L"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/lac__L"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00186"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00190"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000190"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:L-LACTATE"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:11065"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM179"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-29708"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00159"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>lactate<br /><code>C3H5O3 (-1)</code></td>
+	<td>ext</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/lac_L" target="_blank">lac_L</a>; <a href="https://identifiers.org/bigg.metabolite/lac__L" target="_blank">lac__L</a>; <a href="https://identifiers.org/kegg.compound/C00186" target="_blank">C00186</a>; <a href="https://identifiers.org/hmdb/HMDB00190" target="_blank">HMDB00190</a>; <a href="https://identifiers.org/hmdb/HMDB0000190" target="_blank">HMDB0000190</a>; <a href="https://identifiers.org/biocyc/META:L-LACTATE" target="_blank">META:L-LACTATE</a>; <a href="https://identifiers.org/chebi/CHEBI:11065" target="_blank">CHEBI:11065</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM179" target="_blank">MNXM179</a>; <a href="https://identifiers.org/reactome/R-ALL-29708" target="_blank">R-ALL-29708</a>; <a href="https://identifiers.org/seed.compound/cpd00159" target="_blank">cpd00159</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="adp" class="active"><span class="package">adp</span> <code>meta_adp</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-adp"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-adp" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">adp</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_adp" id="adp" name="ADP" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H12N5O10P2">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_adp">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/adp"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/adp"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00008"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB01341"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001341"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ADP"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13222"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM7"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-113581"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00008"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>ADP<br /><code>C10H12N5O10P2 (-3)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/adp" target="_blank">adp</a>; <a href="https://identifiers.org/bigg.metabolite/adp" target="_blank">adp</a>; <a href="https://identifiers.org/kegg.compound/C00008" target="_blank">C00008</a>; <a href="https://identifiers.org/hmdb/HMDB01341" target="_blank">HMDB01341</a>; <a href="https://identifiers.org/hmdb/HMDB0001341" target="_blank">HMDB0001341</a>; <a href="https://identifiers.org/biocyc/META:ADP" target="_blank">META:ADP</a>; <a href="https://identifiers.org/chebi/CHEBI:13222" target="_blank">CHEBI:13222</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM7" target="_blank">MNXM7</a>; <a href="https://identifiers.org/reactome/R-ALL-113581" target="_blank">R-ALL-113581</a>; <a href="https://identifiers.org/seed.compound/cpd00008" target="_blank">cpd00008</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="atp" class="active"><span class="package">atp</span> <code>meta_atp</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-atp"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-atp" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">atp</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_atp" id="atp" name="ATP" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C10H12N5O13P3">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_atp">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/atp"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/atp"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00002"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000538"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:ATP"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:10789"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM3"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-113592"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00002"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>ATP<br /><code>C10H12N5O13P3 (-4)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/atp" target="_blank">atp</a>; <a href="https://identifiers.org/bigg.metabolite/atp" target="_blank">atp</a>; <a href="https://identifiers.org/kegg.compound/C00002" target="_blank">C00002</a>; <a href="https://identifiers.org/hmdb/HMDB0000538" target="_blank">HMDB0000538</a>; <a href="https://identifiers.org/biocyc/META:ATP" target="_blank">META:ATP</a>; <a href="https://identifiers.org/chebi/CHEBI:10789" target="_blank">CHEBI:10789</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM3" target="_blank">MNXM3</a>; <a href="https://identifiers.org/reactome/R-ALL-113592" target="_blank">R-ALL-113592</a>; <a href="https://identifiers.org/seed.compound/cpd00002" target="_blank">cpd00002</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="bpg13" class="active"><span class="package">bpg13</span> <code>meta_bpg13</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-bpg13"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-bpg13" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">bpg13</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_bpg13" id="bpg13" name="1,3-biphosphoglycerate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C3H4O10P2">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_bpg13">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/13dpg"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/13dpg"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00236"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB62758"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001270"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:DPG"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:11881"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM261"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-29800"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00203"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>1,3-biphosphoglycerate<br /><code>C3H4O10P2 (-4)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/13dpg" target="_blank">13dpg</a>; <a href="https://identifiers.org/bigg.metabolite/13dpg" target="_blank">13dpg</a>; <a href="https://identifiers.org/kegg.compound/C00236" target="_blank">C00236</a>; <a href="https://identifiers.org/hmdb/HMDB62758" target="_blank">HMDB62758</a>; <a href="https://identifiers.org/hmdb/HMDB0001270" target="_blank">HMDB0001270</a>; <a href="https://identifiers.org/biocyc/META:DPG" target="_blank">META:DPG</a>; <a href="https://identifiers.org/chebi/CHEBI:11881" target="_blank">CHEBI:11881</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM261" target="_blank">MNXM261</a>; <a href="https://identifiers.org/reactome/R-ALL-29800" target="_blank">R-ALL-29800</a>; <a href="https://identifiers.org/seed.compound/cpd00203" target="_blank">cpd00203</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="dhap" class="active"><span class="package">dhap</span> <code>meta_dhap</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-dhap"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-dhap" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">dhap</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_dhap" id="dhap" name="dihydroxyacetone phosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C3H5O6P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_dhap">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/dhap"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/dhap"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00111"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001473"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB01473"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:DIHYDROXY-ACETONE-PHOSPHATE"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:14341"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM77"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-188451"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00095"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>dihydroxyacetone phosphate<br /><code>C3H5O6P (-2)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/dhap" target="_blank">dhap</a>; <a href="https://identifiers.org/bigg.metabolite/dhap" target="_blank">dhap</a>; <a href="https://identifiers.org/kegg.compound/C00111" target="_blank">C00111</a>; <a href="https://identifiers.org/hmdb/HMDB0001473" target="_blank">HMDB0001473</a>; <a href="https://identifiers.org/hmdb/HMDB01473" target="_blank">HMDB01473</a>; <a href="https://identifiers.org/biocyc/META:DIHYDROXY-ACETONE-PHOSPHATE" target="_blank">META:DIHYDROXY-ACETONE-PHOSPHATE</a>; <a href="https://identifiers.org/chebi/CHEBI:14341" target="_blank">CHEBI:14341</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM77" target="_blank">MNXM77</a>; <a href="https://identifiers.org/reactome/R-ALL-188451" target="_blank">R-ALL-188451</a>; <a href="https://identifiers.org/seed.compound/cpd00095" target="_blank">cpd00095</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="f26bp" class="active"><span class="package">f26bp</span> <code>meta_f26bp</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-f26bp"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-f26bp" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">f26bp</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_f26bp" id="f26bp" name="d-fructose 2,6-bisphosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C6H10O12P2">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_f26bp">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/f26bp"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/f26bp"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00665"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB01047"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001047"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CPD-535"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:12351"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM651"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-30533"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00503"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>d-fructose 2,6-bisphosphate<br /><code>C6H10O12P2 (-4)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/f26bp" target="_blank">f26bp</a>; <a href="https://identifiers.org/bigg.metabolite/f26bp" target="_blank">f26bp</a>; <a href="https://identifiers.org/kegg.compound/C00665" target="_blank">C00665</a>; <a href="https://identifiers.org/hmdb/HMDB01047" target="_blank">HMDB01047</a>; <a href="https://identifiers.org/hmdb/HMDB0001047" target="_blank">HMDB0001047</a>; <a href="https://identifiers.org/biocyc/META:CPD-535" target="_blank">META:CPD-535</a>; <a href="https://identifiers.org/chebi/CHEBI:12351" target="_blank">CHEBI:12351</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM651" target="_blank">MNXM651</a>; <a href="https://identifiers.org/reactome/R-ALL-30533" target="_blank">R-ALL-30533</a>; <a href="https://identifiers.org/seed.compound/cpd00503" target="_blank">cpd00503</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="f6p" class="active"><span class="package">f6p</span> <code>meta_f6p</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-f6p"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-f6p" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">f6p</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_f6p" id="f6p" name="fructose 6-phosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C6H11O9P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_f6p">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/f6p"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/f6p"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00085"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C05345"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000124"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB03971"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:FRUCTOSE-6P"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:10375"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM89621"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd19035"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>fructose 6-phosphate<br /><code>C6H11O9P (-2)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/f6p" target="_blank">f6p</a>; <a href="https://identifiers.org/bigg.metabolite/f6p" target="_blank">f6p</a>; <a href="https://identifiers.org/kegg.compound/C00085" target="_blank">C00085</a>; <a href="https://identifiers.org/kegg.compound/C05345" target="_blank">C05345</a>; <a href="https://identifiers.org/hmdb/HMDB0000124" target="_blank">HMDB0000124</a>; <a href="https://identifiers.org/hmdb/HMDB03971" target="_blank">HMDB03971</a>; <a href="https://identifiers.org/biocyc/META:FRUCTOSE-6P" target="_blank">META:FRUCTOSE-6P</a>; <a href="https://identifiers.org/chebi/CHEBI:10375" target="_blank">CHEBI:10375</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM89621" target="_blank">MNXM89621</a>; <a href="https://identifiers.org/seed.compound/cpd19035" target="_blank">cpd19035</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="fbp" class="active"><span class="package">fbp</span> <code>meta_fbp</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-fbp"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-fbp" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">fbp</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_fbp" id="fbp" name="fructose 1,6-bisphosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C6H10O12P2">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_fbp">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/fdp"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/fdp"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00354"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001058"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:37736"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM417"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00290"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>fructose 1,6-bisphosphate<br /><code>C6H10O12P2 (-4)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/fdp" target="_blank">fdp</a>; <a href="https://identifiers.org/bigg.metabolite/fdp" target="_blank">fdp</a>; <a href="https://identifiers.org/kegg.compound/C00354" target="_blank">C00354</a>; <a href="https://identifiers.org/hmdb/HMDB0001058" target="_blank">HMDB0001058</a>; <a href="https://identifiers.org/chebi/CHEBI:37736" target="_blank">CHEBI:37736</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM417" target="_blank">MNXM417</a>; <a href="https://identifiers.org/seed.compound/cpd00290" target="_blank">cpd00290</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="g6p" class="active"><span class="package">g6p</span> <code>meta_g6p</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-g6p"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-g6p" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">g6p</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_g6p" id="g6p" name="glucose 6-phosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C6H11O9P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_g6p">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/g6p"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/g6p"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00092"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001401"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB01401"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:D-glucopyranose-6-phosphate"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:14314"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM160"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-1629756"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00079"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>glucose 6-phosphate<br /><code>C6H11O9P (-2)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/g6p" target="_blank">g6p</a>; <a href="https://identifiers.org/bigg.metabolite/g6p" target="_blank">g6p</a>; <a href="https://identifiers.org/kegg.compound/C00092" target="_blank">C00092</a>; <a href="https://identifiers.org/hmdb/HMDB0001401" target="_blank">HMDB0001401</a>; <a href="https://identifiers.org/hmdb/HMDB01401" target="_blank">HMDB01401</a>; <a href="https://identifiers.org/biocyc/META:D-glucopyranose-6-phosphate" target="_blank">META:D-glucopyranose-6-phosphate</a>; <a href="https://identifiers.org/chebi/CHEBI:14314" target="_blank">CHEBI:14314</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM160" target="_blank">MNXM160</a>; <a href="https://identifiers.org/reactome/R-ALL-1629756" target="_blank">R-ALL-1629756</a>; <a href="https://identifiers.org/seed.compound/cpd00079" target="_blank">cpd00079</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="glc" class="active"><span class="package">glc</span> <code>meta_glc</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-glc"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-glc" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">glc</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_glc" id="glc" name="d-glucose" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H12O6">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_glc">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/glc_D"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/glc__D"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00031"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00122"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000122"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:Glucopyranose"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:12965"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM41"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00027"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>d-glucose<br /><code>C6H12O6 </code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/glc_D" target="_blank">glc_D</a>; <a href="https://identifiers.org/bigg.metabolite/glc__D" target="_blank">glc__D</a>; <a href="https://identifiers.org/kegg.compound/C00031" target="_blank">C00031</a>; <a href="https://identifiers.org/hmdb/HMDB00122" target="_blank">HMDB00122</a>; <a href="https://identifiers.org/hmdb/HMDB0000122" target="_blank">HMDB0000122</a>; <a href="https://identifiers.org/biocyc/META:Glucopyranose" target="_blank">META:Glucopyranose</a>; <a href="https://identifiers.org/chebi/CHEBI:12965" target="_blank">CHEBI:12965</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM41" target="_blank">MNXM41</a>; <a href="https://identifiers.org/seed.compound/cpd00027" target="_blank">cpd00027</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="grap" class="active"><span class="package">grap</span> <code>meta_grap</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-grap"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-grap" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">grap</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_grap" id="grap" name="glyceraldehyde 3-phosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C3H5O6P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_grap">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/g3p"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/g3p"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00118"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:GAP"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:12983"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB01112"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM74"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-29578"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00102"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>glyceraldehyde 3-phosphate<br /><code>C3H5O6P (-2)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/g3p" target="_blank">g3p</a>; <a href="https://identifiers.org/bigg.metabolite/g3p" target="_blank">g3p</a>; <a href="https://identifiers.org/kegg.compound/C00118" target="_blank">C00118</a>; <a href="https://identifiers.org/biocyc/META:GAP" target="_blank">META:GAP</a>; <a href="https://identifiers.org/chebi/CHEBI:12983" target="_blank">CHEBI:12983</a>; <a href="https://identifiers.org/hmdb/HMDB01112" target="_blank">HMDB01112</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM74" target="_blank">MNXM74</a>; <a href="https://identifiers.org/reactome/R-ALL-29578" target="_blank">R-ALL-29578</a>; <a href="https://identifiers.org/seed.compound/cpd00102" target="_blank">cpd00102</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="nad" class="active"><span class="package">nad</span> <code>meta_nad</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-nad"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-nad" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">nad</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_nad" id="nad" name="NAD" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H26N7O14P2">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_nad">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/nad"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/nad"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00003"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000902"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NAD"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13393"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM8"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-113526"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00003"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>NAD<br /><code>C21H26N7O14P2 (-1)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/nad" target="_blank">nad</a>; <a href="https://identifiers.org/bigg.metabolite/nad" target="_blank">nad</a>; <a href="https://identifiers.org/kegg.compound/C00003" target="_blank">C00003</a>; <a href="https://identifiers.org/hmdb/HMDB0000902" target="_blank">HMDB0000902</a>; <a href="https://identifiers.org/biocyc/META:NAD" target="_blank">META:NAD</a>; <a href="https://identifiers.org/chebi/CHEBI:13393" target="_blank">CHEBI:13393</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM8" target="_blank">MNXM8</a>; <a href="https://identifiers.org/reactome/R-ALL-113526" target="_blank">R-ALL-113526</a>; <a href="https://identifiers.org/seed.compound/cpd00003" target="_blank">cpd00003</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="nadh" class="active"><span class="package">nadh</span> <code>meta_nadh</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-nadh"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-nadh" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">nadh</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_nadh" id="nadh" name="NADH" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C21H27N7O14P2">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_nadh">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/nadh"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/nadh"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00004"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB01487"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001487"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:NADH"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:13395"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM10"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-192305"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00004"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>NADH<br /><code>C21H27N7O14P2 (-2)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/nadh" target="_blank">nadh</a>; <a href="https://identifiers.org/bigg.metabolite/nadh" target="_blank">nadh</a>; <a href="https://identifiers.org/kegg.compound/C00004" target="_blank">C00004</a>; <a href="https://identifiers.org/hmdb/HMDB01487" target="_blank">HMDB01487</a>; <a href="https://identifiers.org/hmdb/HMDB0001487" target="_blank">HMDB0001487</a>; <a href="https://identifiers.org/biocyc/META:NADH" target="_blank">META:NADH</a>; <a href="https://identifiers.org/chebi/CHEBI:13395" target="_blank">CHEBI:13395</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM10" target="_blank">MNXM10</a>; <a href="https://identifiers.org/reactome/R-ALL-192305" target="_blank">R-ALL-192305</a>; <a href="https://identifiers.org/seed.compound/cpd00004" target="_blank">cpd00004</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="lac" class="active"><span class="package">lac</span> <code>meta_lac</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-lac"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-lac" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">lac</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_lac" id="lac" name="lactate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H5O3">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_lac">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/lac_L"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/lac__L"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00186"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00190"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000190"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:L-LACTATE"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:11065"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM179"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-29708"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00159"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>lactate<br /><code>C3H5O3 (-1)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/lac_L" target="_blank">lac_L</a>; <a href="https://identifiers.org/bigg.metabolite/lac__L" target="_blank">lac__L</a>; <a href="https://identifiers.org/kegg.compound/C00186" target="_blank">C00186</a>; <a href="https://identifiers.org/hmdb/HMDB00190" target="_blank">HMDB00190</a>; <a href="https://identifiers.org/hmdb/HMDB0000190" target="_blank">HMDB0000190</a>; <a href="https://identifiers.org/biocyc/META:L-LACTATE" target="_blank">META:L-LACTATE</a>; <a href="https://identifiers.org/chebi/CHEBI:11065" target="_blank">CHEBI:11065</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM179" target="_blank">MNXM179</a>; <a href="https://identifiers.org/reactome/R-ALL-29708" target="_blank">R-ALL-29708</a>; <a href="https://identifiers.org/seed.compound/cpd00159" target="_blank">cpd00159</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="phos" class="active"><span class="package">phos</span> <code>meta_phos</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-phos"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-phos" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">phos</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_phos" id="phos" name="phosphate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="HO4P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_phos">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/pi"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/pi"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00009"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00973"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0001429"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CPD-16459"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:14791"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM9"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-109277"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00009"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>phosphate<br /><code>HO4P (-2)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/pi" target="_blank">pi</a>; <a href="https://identifiers.org/bigg.metabolite/pi" target="_blank">pi</a>; <a href="https://identifiers.org/kegg.compound/C00009" target="_blank">C00009</a>; <a href="https://identifiers.org/hmdb/HMDB00973" target="_blank">HMDB00973</a>; <a href="https://identifiers.org/hmdb/HMDB0001429" target="_blank">HMDB0001429</a>; <a href="https://identifiers.org/biocyc/META:CPD-16459" target="_blank">META:CPD-16459</a>; <a href="https://identifiers.org/chebi/CHEBI:14791" target="_blank">CHEBI:14791</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM9" target="_blank">MNXM9</a>; <a href="https://identifiers.org/reactome/R-ALL-109277" target="_blank">R-ALL-109277</a>; <a href="https://identifiers.org/seed.compound/cpd00009" target="_blank">cpd00009</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="pep" class="active"><span class="package">pep</span> <code>meta_pep</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-pep"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-pep" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">pep</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_pep" id="pep" name="phosphoenolpyruvate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C3H2O6P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_pep">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/pep"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/pep"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00074"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00263"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000263"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PHOSPHO-ENOL-PYRUVATE"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:14812"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM73"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-29492"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00061"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>phosphoenolpyruvate<br /><code>C3H2O6P (-3)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/pep" target="_blank">pep</a>; <a href="https://identifiers.org/bigg.metabolite/pep" target="_blank">pep</a>; <a href="https://identifiers.org/kegg.compound/C00074" target="_blank">C00074</a>; <a href="https://identifiers.org/hmdb/HMDB00263" target="_blank">HMDB00263</a>; <a href="https://identifiers.org/hmdb/HMDB0000263" target="_blank">HMDB0000263</a>; <a href="https://identifiers.org/biocyc/META:PHOSPHO-ENOL-PYRUVATE" target="_blank">META:PHOSPHO-ENOL-PYRUVATE</a>; <a href="https://identifiers.org/chebi/CHEBI:14812" target="_blank">CHEBI:14812</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM73" target="_blank">MNXM73</a>; <a href="https://identifiers.org/reactome/R-ALL-29492" target="_blank">R-ALL-29492</a>; <a href="https://identifiers.org/seed.compound/cpd00061" target="_blank">cpd00061</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="pg2" class="active"><span class="package">pg2</span> <code>meta_pg2</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-pg2"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-pg2" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">pg2</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_pg2" id="pg2" name="2-phosphoglycerate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C3H4O7P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_pg2">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/2pg"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/2pg"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00631"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0003391"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB03391"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:2-PG"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:11651"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM275"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-30485"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00482"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>2-phosphoglycerate<br /><code>C3H4O7P (-3)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/2pg" target="_blank">2pg</a>; <a href="https://identifiers.org/bigg.metabolite/2pg" target="_blank">2pg</a>; <a href="https://identifiers.org/kegg.compound/C00631" target="_blank">C00631</a>; <a href="https://identifiers.org/hmdb/HMDB0003391" target="_blank">HMDB0003391</a>; <a href="https://identifiers.org/hmdb/HMDB03391" target="_blank">HMDB03391</a>; <a href="https://identifiers.org/biocyc/META:2-PG" target="_blank">META:2-PG</a>; <a href="https://identifiers.org/chebi/CHEBI:11651" target="_blank">CHEBI:11651</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM275" target="_blank">MNXM275</a>; <a href="https://identifiers.org/reactome/R-ALL-30485" target="_blank">R-ALL-30485</a>; <a href="https://identifiers.org/seed.compound/cpd00482" target="_blank">cpd00482</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="pg3" class="active"><span class="package">pg3</span> <code>meta_pg3</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-pg3"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-pg3" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">pg3</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_pg3" id="pg3" name="3-phosphoglycerate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C3H4O7P">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_pg3">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/3pg"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/3pg"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00197"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0060180"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:G3P"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:11879"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM126"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-29728"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00169"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>3-phosphoglycerate<br /><code>C3H4O7P (-3)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/3pg" target="_blank">3pg</a>; <a href="https://identifiers.org/bigg.metabolite/3pg" target="_blank">3pg</a>; <a href="https://identifiers.org/kegg.compound/C00197" target="_blank">C00197</a>; <a href="https://identifiers.org/hmdb/HMDB0060180" target="_blank">HMDB0060180</a>; <a href="https://identifiers.org/biocyc/META:G3P" target="_blank">META:G3P</a>; <a href="https://identifiers.org/chebi/CHEBI:11879" target="_blank">CHEBI:11879</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM126" target="_blank">MNXM126</a>; <a href="https://identifiers.org/reactome/R-ALL-29728" target="_blank">R-ALL-29728</a>; <a href="https://identifiers.org/seed.compound/cpd00169" target="_blank">cpd00169</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="pyr" class="active"><span class="package">pyr</span> <code>meta_pyr</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-pyr"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-pyr" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">pyr</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_pyr" id="pyr" name="pyruvate" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C3H3O3">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_pyr">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/pyr"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/pyr"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00022"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0000243"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB00243"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PYRUVATE"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:14987"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM23"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-113557"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00020"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>pyruvate<br /><code>C3H3O3 (-1)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/pyr" target="_blank">pyr</a>; <a href="https://identifiers.org/bigg.metabolite/pyr" target="_blank">pyr</a>; <a href="https://identifiers.org/kegg.compound/C00022" target="_blank">C00022</a>; <a href="https://identifiers.org/hmdb/HMDB0000243" target="_blank">HMDB0000243</a>; <a href="https://identifiers.org/hmdb/HMDB00243" target="_blank">HMDB00243</a>; <a href="https://identifiers.org/biocyc/META:PYRUVATE" target="_blank">META:PYRUVATE</a>; <a href="https://identifiers.org/chebi/CHEBI:14987" target="_blank">CHEBI:14987</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM23" target="_blank">MNXM23</a>; <a href="https://identifiers.org/reactome/R-ALL-113557" target="_blank">R-ALL-113557</a>; <a href="https://identifiers.org/seed.compound/cpd00020" target="_blank">cpd00020</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="h" class="active"><span class="package">h</span> <code>meta_h</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-h"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-h" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">h</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_h" id="h" name="hydrogen ion" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true" fbc:charge="1" fbc:chemicalFormula="H">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_h">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/h"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/h"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00080"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0059597"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB59597"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PROTON"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:10744"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM1"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-1132304"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00067"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>hydrogen ion<br /><code>H (1)</code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/h" target="_blank">h</a>; <a href="https://identifiers.org/bigg.metabolite/h" target="_blank">h</a>; <a href="https://identifiers.org/kegg.compound/C00080" target="_blank">C00080</a>; <a href="https://identifiers.org/hmdb/HMDB0059597" target="_blank">HMDB0059597</a>; <a href="https://identifiers.org/hmdb/HMDB59597" target="_blank">HMDB59597</a>; <a href="https://identifiers.org/biocyc/META:PROTON" target="_blank">META:PROTON</a>; <a href="https://identifiers.org/chebi/CHEBI:10744" target="_blank">CHEBI:10744</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM1" target="_blank">MNXM1</a>; <a href="https://identifiers.org/reactome/R-ALL-1132304" target="_blank">R-ALL-1132304</a>; <a href="https://identifiers.org/seed.compound/cpd00067" target="_blank">cpd00067</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Species</td>
+	    <td id="h2o" class="active"><span class="package">h2o</span> <code>meta_h2o</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-h2o"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-h2o" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">h2o</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><species metaid="meta_h2o" id="h2o" name="water" compartment="cyto" initialConcentration="1" substanceUnits="mmole" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true" fbc:charge="0" fbc:chemicalFormula="H2O">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_h2o">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhmetabolite/h2o"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.metabolite/h2o"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.compound/C00001"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB02111"/>
+            <rdf:li rdf:resource="https://identifiers.org/hmdb/HMDB0002111"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:CPD-15815"/>
+            <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:10743"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.chemical/MNXM2"/>
+            <rdf:li rdf:resource="https://identifiers.org/reactome/R-ALL-109276"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed.compound/cpd00001"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+</species></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>water<br /><code>H2O </code></td>
+	<td>cyto</td>
+    <td><span class=""><span class="invisible">F</span></span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+    <td><span class="fas fa-check-circle green"></span><span class="invisible">T</span></td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td>1.0</td>
+    <td><i class="fa fa-ban gray"></i></td>
+    <td>mmole</td>
+	<td>mmole</td>
+	<td><?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <apply>
+    <divide/>
+    <apply>
+      <times/>
+      <apply>
+        <power/>
+        <cn type="integer"> 10 </cn>
+        <apply>
+          <minus/>
+          <cn type="integer"> 3 </cn>
+        </apply>
+      </apply>
+      <ci> mole </ci>
+    </apply>
+    <ci> litre </ci>
+  </apply>
+</math></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhmetabolite/h2o" target="_blank">h2o</a>; <a href="https://identifiers.org/bigg.metabolite/h2o" target="_blank">h2o</a>; <a href="https://identifiers.org/kegg.compound/C00001" target="_blank">C00001</a>; <a href="https://identifiers.org/hmdb/HMDB02111" target="_blank">HMDB02111</a>; <a href="https://identifiers.org/hmdb/HMDB0002111" target="_blank">HMDB0002111</a>; <a href="https://identifiers.org/biocyc/META:CPD-15815" target="_blank">META:CPD-15815</a>; <a href="https://identifiers.org/chebi/CHEBI:10743" target="_blank">CHEBI:10743</a>; <a href="https://identifiers.org/metanetx.chemical/MNXM2" target="_blank">MNXM2</a>; <a href="https://identifiers.org/reactome/R-ALL-109276" target="_blank">R-ALL-109276</a>; <a href="https://identifiers.org/seed.compound/cpd00001" target="_blank">cpd00001</a></div></td>
+</tr>
+            </tbody>
+        </table>
+    </p>
+
+    <!--------------------------------------------------->
+    <!-- GeneProducts (fbc) -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- Parameters -->
+    <!--------------------------------------------------->
+    
+    <!--------------------------------------------------->
+    <!-- InitialAssignments -->
+    <!--------------------------------------------------->
+    
+    <!--------------------------------------------------->
+    <!-- Rules -->
+    <!--------------------------------------------------->
+    
+    <!--------------------------------------------------->
+    <!-- Reactions -->
+    <!--------------------------------------------------->
+    <p>
+        <a class="anchor" id="anchor_reactions"></a>
+        <table id="table_reactions" class="table table-condensed table-nonfluid table-hover">
+            <thead class="bg-secondary">
+            <tr>    <th scope="col" class="hidden">type</th>
+	<th scope="col" class="warning">Reactions [14]</th>
+	<th scope="col">name</th>
+	<th scope="col"></th>
+	<th scope="col">equation</th>
+	<th scope="col">modifiers</th>
+    <th scope="col">kinetic law</th>
+	<th scope="col">derived units</th>
+    <th scope="col">sbo</th>
+    <th scope="col">cvterm</th>
+</tr>
+            </thead>
+            <tbody>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="GLCt1r" class="active"><span class="package">GLCt1r</span> <code>meta_GLCt1r</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-GLCt1r"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-GLCt1r" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">GLCt1r</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_GLCt1r" id="GLCt1r" name="Glucose Transport (Uniport)" reversible="true" fast="false" compartment="pm">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_GLCt1r">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/GLCt1r"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/GLCt1"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:TRANS-RXN0-574"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR100188"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="glc_ext" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="glc" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Glucose Transport (Uniport)<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>glc_ext &#8646; glc</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/GLCt1r" target="_blank">GLCt1r</a>; <a href="https://identifiers.org/bigg.reaction/GLCt1" target="_blank">GLCt1</a>; <a href="https://identifiers.org/biocyc/META:TRANS-RXN0-574" target="_blank">META:TRANS-RXN0-574</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR100188" target="_blank">MNXR100188</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="HEX1" class="active"><span class="package">HEX1</span> <code>meta_HEX1</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-HEX1"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-HEX1" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">HEX1</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_HEX1" id="HEX1" name="Hexokinase (D-Glucose:ATP) (HEX1)" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_HEX1">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/HEX1"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/17825"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/17828"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR100612"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00216"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/HEX1"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:GLUCOKIN-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.1.1"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R00299"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="glc" stoichiometry="1" constant="true"/>
+    <speciesReference species="atp" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="g6p" stoichiometry="1" constant="true"/>
+    <speciesReference species="adp" stoichiometry="1" constant="true"/>
+    <speciesReference species="h" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+  <listOfModifiers>
+    <modifierSpeciesReference species="g6p"/>
+  </listOfModifiers>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Hexokinase (D-Glucose:ATP) (HEX1)<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>glc + atp &#8646; g6p + adp + h</td>
+	<td>g6p</td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/HEX1" target="_blank">HEX1</a>; <a href="https://identifiers.org/rhea/17825" target="_blank">17825</a>; <a href="https://identifiers.org/rhea/17828" target="_blank">17828</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR100612" target="_blank">MNXR100612</a>; <a href="https://identifiers.org/seed/rxn00216" target="_blank">rxn00216</a>; <a href="https://identifiers.org/bigg.reaction/HEX1" target="_blank">HEX1</a>; <a href="https://identifiers.org/biocyc/META:GLUCOKIN-RXN" target="_blank">META:GLUCOKIN-RXN</a>; <a href="https://identifiers.org/ec-code/2.7.1.1" target="_blank">2.7.1.1</a>; <a href="https://identifiers.org/kegg.reaction/R00299" target="_blank">R00299</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="PGI" class="active"><span class="package">PGI</span> <code>meta_PGI</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-PGI"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-PGI" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">PGI</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_PGI" id="PGI" name="Glucose-6-Phosphate Isomerase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_PGI">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/PGI"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR102535"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00558"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/PGI"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PGLUCISOM-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/5.3.1.9"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="g6p" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="f6p" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Glucose-6-Phosphate Isomerase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>g6p &#8646; f6p</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/PGI" target="_blank">PGI</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR102535" target="_blank">MNXR102535</a>; <a href="https://identifiers.org/seed/rxn00558" target="_blank">rxn00558</a>; <a href="https://identifiers.org/bigg.reaction/PGI" target="_blank">PGI</a>; <a href="https://identifiers.org/biocyc/META:PGLUCISOM-RXN" target="_blank">META:PGLUCISOM-RXN</a>; <a href="https://identifiers.org/ec-code/5.3.1.9" target="_blank">5.3.1.9</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="PFK" class="active"><span class="package">PFK</span> <code>meta_PFK</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-PFK"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-PFK" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">PFK</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_PFK" id="PFK" name="Phosphofructokinase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_PFK">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/PFK"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR102507"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00545"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/PFK"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.1.11"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/16109"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="f6p" stoichiometry="1" constant="true"/>
+    <speciesReference species="atp" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="adp" stoichiometry="1" constant="true"/>
+    <speciesReference species="fbp" stoichiometry="1" constant="true"/>
+    <speciesReference species="h" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+  <listOfModifiers>
+    <modifierSpeciesReference species="pyr"/>
+    <modifierSpeciesReference species="f26bp"/>
+  </listOfModifiers>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Phosphofructokinase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>f6p + atp &#8646; adp + fbp + h</td>
+	<td>pyr<br />f26bp</td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/PFK" target="_blank">PFK</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR102507" target="_blank">MNXR102507</a>; <a href="https://identifiers.org/seed/rxn00545" target="_blank">rxn00545</a>; <a href="https://identifiers.org/bigg.reaction/PFK" target="_blank">PFK</a>; <a href="https://identifiers.org/ec-code/2.7.1.11" target="_blank">2.7.1.11</a>; <a href="https://identifiers.org/rhea/16109" target="_blank">16109</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="FBA" class="active"><span class="package">FBA</span> <code>meta_FBA</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-FBA"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-FBA" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">FBA</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_FBA" id="FBA" name="Fructose-Bisphosphate Aldolase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_FBA">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/FBA"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/14729"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/14732"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR99459"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00786"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/FBA"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/4.1.2.13"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R01068"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="fbp" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="dhap" stoichiometry="1" constant="true"/>
+    <speciesReference species="grap" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Fructose-Bisphosphate Aldolase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>fbp &#8646; dhap + grap</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/FBA" target="_blank">FBA</a>; <a href="https://identifiers.org/rhea/14729" target="_blank">14729</a>; <a href="https://identifiers.org/rhea/14732" target="_blank">14732</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR99459" target="_blank">MNXR99459</a>; <a href="https://identifiers.org/seed/rxn00786" target="_blank">rxn00786</a>; <a href="https://identifiers.org/bigg.reaction/FBA" target="_blank">FBA</a>; <a href="https://identifiers.org/ec-code/4.1.2.13" target="_blank">4.1.2.13</a>; <a href="https://identifiers.org/kegg.reaction/R01068" target="_blank">R01068</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="TPI" class="active"><span class="package">TPI</span> <code>meta_TPI</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-TPI"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-TPI" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">TPI</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_TPI" id="TPI" name="Triose-Phosphate Isomerase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_TPI">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/TPI"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR104918"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00747"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/TPI"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:TRIOSEPISOMERIZATION-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/5.3.1.1"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R01015"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/18585"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="dhap" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="grap" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Triose-Phosphate Isomerase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>dhap &#8646; grap</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/TPI" target="_blank">TPI</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR104918" target="_blank">MNXR104918</a>; <a href="https://identifiers.org/seed/rxn00747" target="_blank">rxn00747</a>; <a href="https://identifiers.org/bigg.reaction/TPI" target="_blank">TPI</a>; <a href="https://identifiers.org/biocyc/META:TRIOSEPISOMERIZATION-RXN" target="_blank">META:TRIOSEPISOMERIZATION-RXN</a>; <a href="https://identifiers.org/ec-code/5.3.1.1" target="_blank">5.3.1.1</a>; <a href="https://identifiers.org/kegg.reaction/R01015" target="_blank">R01015</a>; <a href="https://identifiers.org/rhea/18585" target="_blank">18585</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="GAPD" class="active"><span class="package">GAPD</span> <code>meta_GAPD</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-GAPD"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-GAPD" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">GAPD</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_GAPD" id="GAPD" name="Glyceraldehyde-3-Phosphate Dehydrogenase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_GAPD">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/GAPD"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/10300"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/10303"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR100040"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00781"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/GAPD"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:GAPOXNPHOSPHN-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/1.2.1.12"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R01061"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="grap" stoichiometry="1" constant="true"/>
+    <speciesReference species="phos" stoichiometry="1" constant="true"/>
+    <speciesReference species="nad" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="bpg13" stoichiometry="1" constant="true"/>
+    <speciesReference species="nadh" stoichiometry="1" constant="true"/>
+    <speciesReference species="h" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+  <listOfModifiers>
+    <modifierSpeciesReference species="atp"/>
+  </listOfModifiers>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Glyceraldehyde-3-Phosphate Dehydrogenase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>grap + phos + nad &#8646; bpg13 + nadh + h</td>
+	<td>atp</td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/GAPD" target="_blank">GAPD</a>; <a href="https://identifiers.org/rhea/10300" target="_blank">10300</a>; <a href="https://identifiers.org/rhea/10303" target="_blank">10303</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR100040" target="_blank">MNXR100040</a>; <a href="https://identifiers.org/seed/rxn00781" target="_blank">rxn00781</a>; <a href="https://identifiers.org/bigg.reaction/GAPD" target="_blank">GAPD</a>; <a href="https://identifiers.org/biocyc/META:GAPOXNPHOSPHN-RXN" target="_blank">META:GAPOXNPHOSPHN-RXN</a>; <a href="https://identifiers.org/ec-code/1.2.1.12" target="_blank">1.2.1.12</a>; <a href="https://identifiers.org/kegg.reaction/R01061" target="_blank">R01061</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="PGK" class="active"><span class="package">PGK</span> <code>meta_PGK</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-PGK"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-PGK" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">PGK</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_PGK" id="PGK" name="Phosphoglycerate Kinase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_PGK">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/PGK"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/14804"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/14801"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR102538"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn01100"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/PGK"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PHOSGLYPHOS-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.2.3"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R01512"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="adp" stoichiometry="1" constant="true"/>
+    <speciesReference species="bpg13" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="atp" stoichiometry="1" constant="true"/>
+    <speciesReference species="pg3" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Phosphoglycerate Kinase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>adp + bpg13 &#8646; atp + pg3</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/PGK" target="_blank">PGK</a>; <a href="https://identifiers.org/rhea/14804" target="_blank">14804</a>; <a href="https://identifiers.org/rhea/14801" target="_blank">14801</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR102538" target="_blank">MNXR102538</a>; <a href="https://identifiers.org/seed/rxn01100" target="_blank">rxn01100</a>; <a href="https://identifiers.org/bigg.reaction/PGK" target="_blank">PGK</a>; <a href="https://identifiers.org/biocyc/META:PHOSGLYPHOS-RXN" target="_blank">META:PHOSGLYPHOS-RXN</a>; <a href="https://identifiers.org/ec-code/2.7.2.3" target="_blank">2.7.2.3</a>; <a href="https://identifiers.org/kegg.reaction/R01512" target="_blank">R01512</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="PGM" class="active"><span class="package">PGM</span> <code>meta_PGM</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-PGM"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-PGM" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">PGM</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_PGM" id="PGM" name="Phosphoglycerate Mutase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_PGM">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/PGM"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/15904"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/15901"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR102547"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn01106"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/PGM"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:3PGAREARR-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/5.4.2.1"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R01518"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="pg3" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="pg2" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Phosphoglycerate Mutase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>pg3 &#8646; pg2</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/PGM" target="_blank">PGM</a>; <a href="https://identifiers.org/rhea/15904" target="_blank">15904</a>; <a href="https://identifiers.org/rhea/15901" target="_blank">15901</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR102547" target="_blank">MNXR102547</a>; <a href="https://identifiers.org/seed/rxn01106" target="_blank">rxn01106</a>; <a href="https://identifiers.org/bigg.reaction/PGM" target="_blank">PGM</a>; <a href="https://identifiers.org/biocyc/META:3PGAREARR-RXN" target="_blank">META:3PGAREARR-RXN</a>; <a href="https://identifiers.org/ec-code/5.4.2.1" target="_blank">5.4.2.1</a>; <a href="https://identifiers.org/kegg.reaction/R01518" target="_blank">R01518</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="ENO" class="active"><span class="package">ENO</span> <code>meta_ENO</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-ENO"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-ENO" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">ENO</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_ENO" id="ENO" name="Enolase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_ENO">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/ENO"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/10164"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/10167"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR97932"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00459"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/ENO"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:2PGADEHYDRAT-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/4.2.1.11"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R00658"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="pg2" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="h2o" stoichiometry="1" constant="true"/>
+    <speciesReference species="pep" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Enolase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>pg2 &#8646; h2o + pep</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/ENO" target="_blank">ENO</a>; <a href="https://identifiers.org/rhea/10164" target="_blank">10164</a>; <a href="https://identifiers.org/rhea/10167" target="_blank">10167</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR97932" target="_blank">MNXR97932</a>; <a href="https://identifiers.org/seed/rxn00459" target="_blank">rxn00459</a>; <a href="https://identifiers.org/bigg.reaction/ENO" target="_blank">ENO</a>; <a href="https://identifiers.org/biocyc/META:2PGADEHYDRAT-RXN" target="_blank">META:2PGADEHYDRAT-RXN</a>; <a href="https://identifiers.org/ec-code/4.2.1.11" target="_blank">4.2.1.11</a>; <a href="https://identifiers.org/kegg.reaction/R00658" target="_blank">R00658</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="PK" class="active"><span class="package">PK</span> <code>meta_PK</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-PK"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-PK" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">PK</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_PK" id="PK" name="Pyruvate Kinase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_PK">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/PYK"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/18157"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/18160"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR103371"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00148"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/PYK"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:PEPDEPHOS-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/2.7.1.40"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R00200"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="pep" stoichiometry="1" constant="true"/>
+    <speciesReference species="adp" stoichiometry="1" constant="true"/>
+    <speciesReference species="h" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="pyr" stoichiometry="1" constant="true"/>
+    <speciesReference species="atp" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>Pyruvate Kinase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>pep + adp + h &#8646; pyr + atp</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/PYK" target="_blank">PYK</a>; <a href="https://identifiers.org/rhea/18157" target="_blank">18157</a>; <a href="https://identifiers.org/rhea/18160" target="_blank">18160</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR103371" target="_blank">MNXR103371</a>; <a href="https://identifiers.org/seed/rxn00148" target="_blank">rxn00148</a>; <a href="https://identifiers.org/bigg.reaction/PYK" target="_blank">PYK</a>; <a href="https://identifiers.org/biocyc/META:PEPDEPHOS-RXN" target="_blank">META:PEPDEPHOS-RXN</a>; <a href="https://identifiers.org/ec-code/2.7.1.40" target="_blank">2.7.1.40</a>; <a href="https://identifiers.org/kegg.reaction/R00200" target="_blank">R00200</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="LDH_L" class="active"><span class="package">LDH_L</span> <code>meta_LDH_L</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-LDH_L"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-LDH_L" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">LDH_L</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_LDH_L" id="LDH_L" name="L-Lactate Dehydrogenase" reversible="true" fast="false" compartment="cyto">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_LDH_L">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/LDH_L"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/23447"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/23444"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR101040"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn00499"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/LDH_L"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:L-LACTATE-DEHYDROGENASE-RXN"/>
+            <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.27"/>
+            <rdf:li rdf:resource="https://identifiers.org/kegg.reaction/R00703"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="pyr" stoichiometry="1" constant="true"/>
+    <speciesReference species="nadh" stoichiometry="1" constant="true"/>
+    <speciesReference species="h" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="lac" stoichiometry="1" constant="true"/>
+    <speciesReference species="nad" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>L-Lactate Dehydrogenase<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>pyr + nadh + h &#8646; lac + nad</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/LDH_L" target="_blank">LDH_L</a>; <a href="https://identifiers.org/rhea/23447" target="_blank">23447</a>; <a href="https://identifiers.org/rhea/23444" target="_blank">23444</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR101040" target="_blank">MNXR101040</a>; <a href="https://identifiers.org/seed/rxn00499" target="_blank">rxn00499</a>; <a href="https://identifiers.org/bigg.reaction/LDH_L" target="_blank">LDH_L</a>; <a href="https://identifiers.org/biocyc/META:L-LACTATE-DEHYDROGENASE-RXN" target="_blank">META:L-LACTATE-DEHYDROGENASE-RXN</a>; <a href="https://identifiers.org/ec-code/1.1.1.27" target="_blank">1.1.1.27</a>; <a href="https://identifiers.org/kegg.reaction/R00703" target="_blank">R00703</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="L_LACt2r" class="active"><span class="package">L_LACt2r</span> <code>meta_L_LACt2r</code>
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-L_LACt2r"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-L_LACt2r" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">L_LACt2r</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction metaid="meta_L_LACt2r" id="L_LACt2r" name="L-Lactate Reversible Transport" reversible="true" fast="false" compartment="pm">
+  <annotation>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+      <rdf:Description rdf:about="#meta_L_LACt2r">
+        <bqbiol:is>
+          <rdf:Bag>
+            <rdf:li rdf:resource="https://identifiers.org/vmhreaction/L_LACt2r"/>
+            <rdf:li rdf:resource="https://identifiers.org/metanetx.reaction/MNXR101277"/>
+            <rdf:li rdf:resource="https://identifiers.org/seed/rxn05602"/>
+            <rdf:li rdf:resource="https://identifiers.org/bigg.reaction/L_LACt2r"/>
+            <rdf:li rdf:resource="https://identifiers.org/biocyc/META:TRANS-RXN-104"/>
+            <rdf:li rdf:resource="https://identifiers.org/rhea/29415"/>
+          </rdf:Bag>
+        </bqbiol:is>
+      </rdf:Description>
+    </rdf:RDF>
+  </annotation>
+  <listOfReactants>
+    <speciesReference species="lac_ext" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="lac" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>L-Lactate Reversible Transport<br />
+	</td>
+	<td class ="success">&#8646;</td>
+	<td>lac_ext &#8646; lac</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td><div class="cvterm"><span class="collection">BQB_IS</span><br /><a href="https://identifiers.org/vmhreaction/L_LACt2r" target="_blank">L_LACt2r</a>; <a href="https://identifiers.org/metanetx.reaction/MNXR101277" target="_blank">MNXR101277</a>; <a href="https://identifiers.org/seed/rxn05602" target="_blank">rxn05602</a>; <a href="https://identifiers.org/bigg.reaction/L_LACt2r" target="_blank">L_LACt2r</a>; <a href="https://identifiers.org/biocyc/META:TRANS-RXN-104" target="_blank">META:TRANS-RXN-104</a>; <a href="https://identifiers.org/rhea/29415" target="_blank">29415</a></div></td>
+</tr>
+                <tr>    <td class="hidden">Reaction</td>
+	    <td id="ATPuse" class="active"><span class="package">ATPuse</span> 
+      <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#model-ATPuse"><i class="fa fa-code"></i></button>
+      <div class="modal fade" id="model-ATPuse" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">ATPuse</h4></div>
+            <div class="modal-body"><textarea rows="20" class="form-control" style="min-width: 100%; font-family: 'Courier New'"><reaction id="ATPuse" name="ADP consumption" reversible="false" fast="false" compartment="cyto">
+  <listOfReactants>
+    <speciesReference species="atp" stoichiometry="1" constant="true"/>
+    <speciesReference species="h2o" stoichiometry="1" constant="true"/>
+  </listOfReactants>
+  <listOfProducts>
+    <speciesReference species="adp" stoichiometry="1" constant="true"/>
+    <speciesReference species="phos" stoichiometry="1" constant="true"/>
+    <speciesReference species="h" stoichiometry="1" constant="true"/>
+  </listOfProducts>
+</reaction></textarea></div>
+          </div>
+        </div>
+      </div>
+    
+    </td>
+
+	<td>ADP consumption<br />
+	</td>
+	<td class ="danger">&#10142;</td>
+	<td>atp + h2o &#10142; adp + phos + h</td>
+	<td><i class="fa fa-ban gray"></i></td>
+	<td><i class="fa fa-ban gray"></i></td>
+    <td></td>
+	<td></td>
+	<td></td>
+</tr>
+            </tbody>
+        </table>
+    <p/>
+
+    <!--------------------------------------------------->
+    <!-- Objectives (fbc) -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- Constraints -->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- Events -->
+    <!--------------------------------------------------->
+
+            </div>
+            <!-- END CONTENT -->
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <hr/>
+                <p>Created with <a href="https://github.com/matthiaskoenig/sbmlutils/" target="_blank"><i class="fab fa-github"></i> sbmlutils</a></p>
+            </div>
+
+        </div>
+    </div>
+</main>
+</body>
+</html>

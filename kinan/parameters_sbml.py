@@ -95,73 +95,82 @@ sbo_map = {
     "SA": "SBO:0000558",  # specific activity
 }
 
+
 with open(PARAMETER_JSON, "r") as fpars:
-    pdata = json.load(fpars)
+    with open(os.path.join(RESULTS_PATH, "pubchem_mapping.json"), "r") as fpubchem:
 
-    counter = 1
-    for key, pentry in pdata.items():
+        pdata = json.load(fpars)
+        pubchem_map = json.load(fpubchem)
 
-        # protein annotations
-        p_annotations = [
-            (BQB.IS, f"brenda/{pentry['ec']}"),
-            (BQB.IS, f"ec-code/{pentry['ec']}"),
-            (BQB.IS, f"taxonomy/{pentry['taxonomy']}"),
-        ]
-        if 'uniprot' in pentry:
-            p_annotations.append(
-                (BQB.IS, f"uniprot/{pentry['uniprot']}")
-            )
-        for tissue in pentry['tissues']:
-            bto_id = tissue.replace("_", ":")
-            p_annotations.append((BQB.IS, f"bto/{bto_id}"))
+        counter = 1
+        for key, pentry in pdata.items():
 
-        for kin_key in ['KM', 'KI', 'TN', 'KKM', 'SA']:
-            sbo = sbo_map.get(kin_key, None)
+            # protein annotations
+            p_annotations = [
+                (BQB.IS, f"brenda/{pentry['ec']}"),
+                (BQB.IS, f"ec-code/{pentry['ec']}"),
+                (BQB.IS, f"taxonomy/{pentry['taxonomy']}"),
+            ]
+            if 'uniprot' in pentry:
+                p_annotations.append(
+                    (BQB.IS, f"uniprot/{pentry['uniprot']}")
+                )
+            for tissue in pentry['tissues']:
+                bto_id = tissue.replace("_", ":")
+                p_annotations.append((BQB.IS, f"bto/{bto_id}"))
 
-            if kin_key in pentry["data"]:
-                for item in pentry["data"][kin_key]:
+            for kin_key in ['KM', 'KI', 'TN', 'KKM', 'SA']:
+                sbo = sbo_map.get(kin_key, None)
 
-                    # get attributes
-                    sid = "PB{0:06d}".format(counter)
-                    if "substrate" in item:
-                        name = f"{kin_key} {key} {pentry['organism']} ({item['substrate']})"
-                    else:
-                        name = f"{kin_key} {key} {pentry['organism']})"
+                if kin_key in pentry["data"]:
+                    for item in pentry["data"][kin_key]:
 
-                    value = item["value"]
-                    units_str = unit_map[item["units"]]
+                        # get attributes
+                        sid = "PB{0:06d}".format(counter)
+                        if "substrate" in item:
+                            name = f"{kin_key} {key} {pentry['organism']} ({item['substrate']})"
+                        else:
+                            name = f"{kin_key} {key} {pentry['organism']})"
 
-                    # annotations
-                    annotations = deepcopy(p_annotations)
-                    if sbo:
-                        annotations.append((BQB.IS, f"sbo/{sbo}"))
+                        value = item["value"]
+                        units_str = unit_map[item["units"]]
 
-                    for pubmed in item["pubmeds"]:
-                        annotations.append((BQB.IS_DESCRIBED_BY, f"pubmed/{pubmed}"))
+                        # annotations
+                        annotations = deepcopy(p_annotations)
+                        if sbo:
+                            annotations.append((BQB.IS, f"sbo/{sbo}"))
 
-                    # chemical annotations
-                    if "chebi" in item:
-                        # FIXME: additional annotations (infered from chebi via pubchem)
-                        chebi_id = item["chebi"].split("_")[1]
-                        chebi_path = os.path.join(RESULTS_PATH, "pubchem", f"{chebi_id}.json")
-                        if os.path.exists(chebi_path):
-                            with open(chebi_path, "r") as fp:
-                                print(chebi_path)
-                                map = json.load(fp)
+                        for pubmed in item["pubmeds"]:
+                            annotations.append((BQB.IS_DESCRIBED_BY, f"pubmed/{pubmed}"))
+
+                        # chemical annotations
+                        if "chebi" in item:
+                            chebi_id = item["chebi"].split("_")[1]
+
+                            if chebi_id in pubchem_map:
+                                map = pubchem_map[chebi_id]
                                 for collection, data in map.items():
+                                    # FIXME: temporary fixes until data is requested again
+                                    if collection in ["bindingdb", "pdb"]:
+                                        continue
+                                    if collection == "brenda":
+                                        collection = "brenda.ligand"
+                                    if collection == "metabolights":
+                                        collection = "metabolights.compound"
+
                                     if isinstance(data, list):
                                         for term in data:
                                             annotations.append((BQB.IS, f"{collection}/{term}"))
                                     else:
                                         annotations.append((BQB.IS, f"{collection}/{data}"))
-                        else:
-                            annotations.append((BQB.IS, f"chebi/CHEBI:{chebi_id}"))
+                            else:
+                                annotations.append((BQB.IS, f"chebi/CHEBI:{chebi_id}"))
 
-                    # create parameter
-                    p = Parameter(sid=sid, value=value, name=name, unit=units_str,
-                                  sboTerm=sbo, annotations=annotations)
-                    parameters.append(p)
-                    counter += 1
+                        # create parameter
+                        p = Parameter(sid=sid, value=value, name=name, unit=units_str,
+                                      sboTerm=sbo, annotations=annotations)
+                        parameters.append(p)
+                        counter += 1
         # break
 
 if __name__ == "__main__":

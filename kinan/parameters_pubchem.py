@@ -72,6 +72,8 @@ def get_pubchem_info(chebis, force=False):
         if not force:
             # only do query if file does not yet exist
             if os.path.exists(chebi_path):
+                with open(chebi_path, "r") as f:
+                    chebi_map[chebi_id] = json.load(f)
                 continue
 
         map = {'chebi': {chebi_id}}
@@ -92,7 +94,12 @@ def get_pubchem_info(chebis, force=False):
 
                 # get additional information from pubchem
                 synonyms = get_pubchem_synonyms(inchikey)
-                # pprint(synonyms)
+                if "error" in synonyms:
+                    # catch errors of form: {'error': " The query InChIkey
+                    # 'YAJCHEVQCOHZDC-QMMNLEPNSA-N' is not present in 'UniChem.'}
+                    logging.error(f"{chebi_id}: {synonyms}")
+                    synonyms = {}
+
                 for d in synonyms:
                     src_id = d["src_id"]
                     src_compound_id = d["src_compound_id"]
@@ -116,8 +123,8 @@ def get_pubchem_info(chebis, force=False):
         # term fixes
         map["chebi"] = {f"CHEBI:{term}" for term in map["chebi"]}
         # storing results
-        chebi_map[chebi_id] = map
         _serialize_json(map, chebi_path)
+        chebi_map[chebi_id] = map
 
     return chebi_map
 
@@ -135,10 +142,9 @@ def _serialize_json(data, path):
 
 # get all chebis
 chebis = get_chebis_from_parameters()
+# chebis = ["5931",]
 
 # get information for chebis
-chebi_map = get_pubchem_info(chebis, force=True)
-
+chebi_map = get_pubchem_info(chebis, force=False)
 path_pubchem = os.path.join(RESULTS_PATH, "pubchem_mapping.json")
-with open(path_pubchem, 'w') as fp:
-    json.dump(chebi_map, fp, indent=2)
+_serialize_json(data=chebi_map, path=path_pubchem)

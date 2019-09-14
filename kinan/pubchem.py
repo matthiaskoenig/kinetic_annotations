@@ -25,7 +25,6 @@ from pprint import pprint
 COLLECTIONS = None
 MIRIAM_COLLECTIONS = {
     '2': "drugbank",
-    '3': "pdb",
     '5': "pubchem.substance",
     '6': "kegg",  #KEGG LIGAND is a composite DB consisting of COMPOUND, 'GLYCAN, REACTION, RPAIR, RCLASS, and ENZYME DBs, whose 'entries are identified by C, G, R, RP, RC, and EC 'numbers, respectively.
     '7': "chebi",
@@ -36,10 +35,9 @@ MIRIAM_COLLECTIONS = {
     '22': "pubchem.compound",
     '25': "lincs.smallmolecule",
     '27': "vmhmetabolite",
-    '31': "bindingdb",
     '32': "comptox",
     '33': "lipidmaps",
-    '36': "metabolights",
+    '36': "metabolights.compound",
     '37': "brenda.ligand",
     '38': "rhea",
     '41': "swisslipid",
@@ -104,12 +102,11 @@ def get_pubchem_synonyms(inchikey):
     return response.json()
 
 
-
-
 if __name__ == "__main__":
     from pprint import pprint
     print("Loading chebi information")
 
     # get_substance_info(brenda_ligand_id=100)
     data = get_pubchem_collections()
+    pprint(data)
 
